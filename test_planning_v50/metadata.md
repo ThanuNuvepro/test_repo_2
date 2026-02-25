@@ -1,7 +1,7 @@
 # Project Plan
 
 ## Basic Information
-- **ID:** 5a49c443-27ae-43f3-a347-a84424c2f348
+- **ID:** 9147b104-9c8b-46c3-8151-53daf5f7d2b6
 - **Name:** test_planning_v50
 - **Description:** Detailed specification for generating a Project using Generative AI
 - **Schema:** 2.0
@@ -12,9 +12,9 @@
 
 ## Users and Dates
 - **Created By:** rocky
-- **Created On:** 2026-02-25T16:26:52.855234
+- **Created On:** 2026-02-25T16:30:04.528165
 - **Modified By:** rocky
-- **Modified On:** 2026-02-25T16:27:21.758117
+- **Modified On:** 2026-02-25T16:30:27.739287
 - **Published On:** N/A
 
 ## User prompt
@@ -22,105 +22,105 @@
 ---
 
 ## Problem Statement
-- Scenario-Based Problem Statement for Backend Development (Python Core): Hello World App
+- Project Problem Statement: “Hello, World!” Launchpad for New Python Developers
 
-Scenario:  
-You are an Entry-Level Backend Developer who has just joined a fast-growing technology startup that provides educational tools for new programmers. As your first assignment, you are tasked with creating the foundational building block for all future training materials: a simple backend application that demonstrates how to display a basic message to the user using Python. This "Hello World App" will be the core example in your company's beginner-friendly onboarding curriculum.
+Scenario
 
-Problem Context:  
-In the tech industry, clear and effective communication between software and its users is crucial. For most new Python developers, mastering the basics—such as running a Python script and producing output to the console—is a necessary first step that serves as the gateway to more advanced backend development concepts. Your organization has found that many beginners struggle with the initial setup and the process of writing, saving, and executing their very first program. Therefore, your objective is to create a clear, demonstrable "Hello, World!" backend script that acts as the entry point for guided learning.
+Description:
+You have just been onboarded as a Junior Python Developer at a general software development company, CodeBright Solutions. As part of your orientation, you are required to get familiarized with the company's development workflow and Python basics. Your first official task is to write, execute, and verify a Python script that outputs the classic “Hello, World!” message to the console. This task serves as an introduction to Python programming, ensuring you can use basic syntax, print statements, and run Python scripts as part of the software development process.
 
-Project Objective:  
-Develop a Python script that, when executed, displays the message "Hello, World!" to the user. This script will serve as the model example for all new learners at your company, ensuring they gain hands-on experience with the fundamental workflow of Python development in a backend context.
+Core Guidelines:
 
-Learning Outcomes:
-- Ability to write, save, and execute a Python script.
-- First-hand experience with Python print statements.
-- Establishment of an entry point for further Python learning.
+- Real-World Role: You are a Junior Python Developer on your first day at a software company, learning the fundamentals that will be foundational for all your future projects.
+- Problem Context: Industry best practices require all incoming developers to demonstrate proficiency in fundamental programming constructs and workflow, starting with the simplest Python script—printing a message to the console. This serves both as an onboarding ritual and a basic technical check.
+- Objective: Your mission is to set up your development environment, author a minimal but correct Python script that prints “Hello, World!” to the console, and execute it, demonstrating your understanding of Python core concepts.
+- Learning Outcomes: Completing this project target the following skill areas:
+    - Understand and apply Basic Python Syntax.
+    - Use the print statement to send output to the console.
+    - Set up (create and save) and execute a Python script using your chosen IDE or the command line.
+- Target Audience Alignment: This task is explicitly designed for beginner developers learning Python. It assumes no prior programming experience beyond basic computer literacy and is paced for Easy-level onboarding. All instructions avoid technical jargon and presume no pre-existing Python setup.
+- Time Constraints: This project is designed for completion in no more than 15 minutes, split explicitly into setup, coding, and testing milestones.
 
-Target Audience Alignment:  
-This task is designed specifically for beginners who are new to programming and Python. The project assumes no prior experience beyond a general familiarity with computers. All instructions and requirements should be clear, straightforward, and avoid referencing advanced programming paradigms or backend frameworks.
+Project Task Breakdown
 
-Time Constraints:  
-The entire project is designed to be completed in 15 minutes or less, enabling rapid onboarding and immediate feedback for new learners.
+Step 1: Setting Up Your Development Environment (Estimated time: 5 minutes)
+- Download and install Python (version 3.x recommended) if it’s not already available on your machine.
+- Choose an editor/IDE you are comfortable with (e.g., IDLE, VS Code, PyCharm, or even Notepad).
+- Open your chosen editor and create a new file. Save the file as hello_world.py in a dedicated folder.
 
-Detailed Project Requirements:
+Step 2: Writing the Python Script (Estimated time: 3 minutes)
+- In your new file, use the correct Python syntax to print a message to the console. The script must contain only one output statement displaying exactly:
+  Hello, World!
+- Example code:
+  ```python
+  print("Hello, World!")
+  ```
 
-1. Project Setup (2 minutes)
-   - Create a new directory called hello_world_app on your local machine.
-   - Open your preferred text editor (such as VS Code, Sublime Text, or Notepad).
+Step 3: Executing and Verifying the Script (Estimated time: 4 minutes)
+- Open your command line or terminal.
+- Navigate to the folder where you saved hello_world.py.
+- Execute the script with the command:
+  python hello_world.py
+- Confirm that the only output displayed in your console is:
+  Hello, World!
 
-2. Script Creation (5 minutes)
-   - In the hello_world_app directory, create a new file named hello.py.
-   - Write a Python statement in hello.py that instructs the computer to display the message: 
-     Hello, World!
+Step 4: Reflection and Submission (Estimated time: 3 minutes)
+- Double-check your code for errors in syntax or casing.
+- Ensure your output matches the expected result precisely.
+- Prepare a brief note (1-2 sentences) summarizing what you did and submit both your hello_world.py file and your note to your onboarding reviewer or supervisor for feedback.
 
-3. Execution and Verification (5 minutes)
-   - Save your hello.py file.
-   - Open a command-line interface (Terminal on macOS/Linux, Command Prompt or PowerShell on Windows).
-   - Navigate (cd) to the hello_world_app directory.
-   - Run your script using the command: python hello.py
-   - Observe and verify that the output is exactly: Hello, World!
+Project Criteria & Relevance
 
-4. Documentation and Reflection (3 minutes)
-   - In a new text file called README.txt within the hello_world_app directory, briefly describe (in your own words) what the script does and how you executed it.
-   - Reflect on what you learned from this process and note any difficulties faced or questions you may have for your team leader.
+- The script must use proper Python Basic Syntax (such as correct indentation and case sensitivity).
+- You must use a print statement as defined in Python Core.
+- The file must be an executable Python script, set up, saved, and run from your local environment (not within a Python interpreter or notebook).
+- All instructions and output must adhere strictly to the boundaries of printing “Hello, World!”; no additional logic, text, or features are to be included.
 
-Constraints and Feature Set Adherence:
-- The only feature required is the display of a static "Hello, World!" message to the user via standard console output.
-- All instructions and the solution must reside strictly within Python Core; do not use any external libraries or advanced backend development frameworks.
-- The submission (hello.py) must not include any input, complex logic, or program structure beyond the direct print statement.
+Why This Matters
 
-How This Meets Industry and Learning Needs:
-- This scenario authentically mirrors standard onboarding and training processes in industry settings, where establishing an environment and executing a "Hello, World!" script is recognized as the foundational milestone for all developers.
-- Completion guarantees hands-on familiarity with writing, saving, and running Python code—key initial steps in backend development.
-- The task’s simplicity provides confidence and a launching pad for exploring more complex backend features and workflows in the future.
+This project is foundational to your journey as a Python developer. Printing “Hello, World!”:
+- Confirms your ability to use Python’s basic syntax
+- Divides the workflow into writing, saving, and running code—essential practices for any developer
+- Introduces you to the process followed in nearly every industry setting before you move on to more complex tasks
 
-Outcome for Beginner Python Learners:
-- Demonstrate the ability to use a text editor to create and modify Python scripts.
-- Successfully write a print statement—the core mechanism for output—in Python.
-- Gain direct experience with the process of script execution from the command line, an essential skill in backend development.
-- Lay the groundwork for a deeper dive into Python and backend programming concepts.
+By following the above steps, you have demonstrated initial competency in:
+- Basic Python syntax
+- Using the print statement
+- Setting up and successfully executing a Python script
 
-Upon completion, submit the following:
-- hello.py with your "Hello, World!" output statement.
-- README.txt summarizing what you did and learned.
-
-This project must be completed in full within 15 minutes. No additional features, input/output methods, or advanced code is required. This ensures clarity and a 100% focus on building block concepts crucial for every backend Python developer’s journey.
+Make this your launching pad for mastering Python Core and stepping into more advanced programming challenges at CodeBright Solutions—and beyond!
 ---
 
 # Project Specification
 
 ## Overview
-- **Tech Domain:** Backend Development
+- **Tech Domain:** Core Programming
 - **Tech Subdomain:** Python Core
-- **Application Domain:** general
-- **Application Subdomain:** hello_world_app
-- **Target Audience:** Beginners learning Python
-- **Difficulty Level:** Beginner
+- **Application Domain:** General
+- **Application Subdomain:** hello_world
+- **Target Audience:** Beginner developers learning Python
+- **Difficulty Level:** Easy
 - **Time Constraints:** 15 minutes
 - **Learning Style:** guided
 - **Requires Research:** False
 
 ## Global Feature Set
-- Display 'Hello, World!' message to the user
+- Prints 'Hello, World!' to the console
 
 
 ## Global Learning Outcomes
-- Ability to write, save, and execute a Python script
-- First-hand experience with Python print statements
-- Establish an entry point for further Python learning
+- Basic Python syntax
+- Using print statements
+- Setting up and executing a Python script
 
 
 ## Acceptance Criteria
-- Running the script displays 'Hello, World!' on the standard output
-- No errors are produced during execution
-- Code follows Python syntax standards
+- Python script runs without errors
+- Console displays: Hello, World!
 
 
 ## Deliverables
-- hello_world.py script containing the correct code
-- A brief README with instructions on how to run the script
+- A Python script file (hello_world.py)
 
 
 ---
@@ -128,15 +128,15 @@ This project must be completed in full within 15 minutes. No additional features
 # Projects
 
   
-  ## 1. Backend Development (Python Core)
+  ## 1. Core Programming (Python Core)
 
   ### Tech Stack
   - **Language:** Python (3.10+)
-  - **Framework:**  ()
+  - **Framework:** None (N/A)
 
   ### Testing
   
-  - **Unit Testing:** None required (manual verification) (Coverage: No)
+  - **Unit Testing:** pytest (Coverage: No)
   
   
   
@@ -154,9 +154,9 @@ This project must be completed in full within 15 minutes. No additional features
 
   ### Prerequisites
   
-  - Python installed (3.10 or higher)
+  - Computer with OS support for Python
   
-  - Familiarity with command line or terminal
+  - Basic command-line usage
   
 
   ### Runtime Environment
@@ -170,14 +170,16 @@ This project must be completed in full within 15 minutes. No additional features
 
   ### Learning Outcomes
   
-  - Understand how to write and execute a basic Python script
+  - Ability to install Python and run scripts
   
-  - Gain confidence in creating output using the print function
+  - Understanding of the print function
+  
+  - Confidence to write first Python program
   
 
   ### Feature Set
   
-  - A Python script named hello_world.py that prints 'Hello, World!' when run
+  - Script prints 'Hello, World!'
   
 
   ### API Documentation
