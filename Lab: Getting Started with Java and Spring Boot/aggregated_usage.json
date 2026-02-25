@@ -1,0 +1,81 @@
+[
+    {
+        "profile": "STUDIO",
+        "crew_llm": {
+            "config": "OPENAI_GPT_4_1",
+            "planning": "OPENAI_GPT_4_1",
+            "research": "OPENAI_GPT_4_1",
+            "solution": "OPENAI_GPT_4_1",
+            "stub_code": "OPENAI_GPT_4_1",
+            "test_case": "OPENAI_GPT_4_1",
+            "partial_code": "OPENAI_GPT_4_1",
+            "solution_review": "OPENAI_GPT_4_1",
+            "problem_statement": "OPENAI_GPT_4_1",
+            "research_with_tool": "OPENAI_GPT_4_1",
+            "modules_and_activities": "OPENAI_GPT_4_1"
+        },
+        "api_keys": {
+            "ANTHROPIC_API_KEY": "**********X_wAA",
+            "PERPLEXITYAI_API_KEY": "**********qOmmW",
+            "GEMINI_API_KEY": "**********_fj1s",
+            "OPENAI_API_KEY": "**********0DhoA"
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "planning_crew",
+        "usage_metrics": {
+            "total_tokens": 5321,
+            "prompt_tokens": 4301,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1020,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "problem_statement_crew",
+        "usage_metrics": {
+            "total_tokens": 3130,
+            "prompt_tokens": 1876,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1254,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "getting_started_java_springboot",
+        "crew_name": "modules_and_activities_crew",
+        "usage_metrics": {
+            "total_tokens": 6090,
+            "prompt_tokens": 4987,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1103,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "getting_started_java_springboot",
+        "crew_name": "solution_crew",
+        "usage_metrics": {
+            "total_tokens": 42814,
+            "prompt_tokens": 40783,
+            "cached_prompt_tokens": 7168,
+            "completion_tokens": 2031,
+            "successful_requests": 16
+        }
+    },
+    {
+        "execution_id": "a2ca704f-cb93-49bb-88f8-99cc6c0f0eb3",
+        "project_name": "Lab: Getting Started with Java and Spring Boot",
+        "created_by": "rocky",
+        "created_on": "2026-02-25T17:18:33.207216",
+        "modified_by": "rocky",
+        "modified_on": "2026-02-25T17:19:37.152169",
+        "owner": "Nuvepro",
+        "prompt": "Generate lab for module: Getting Started with Java and Spring Boot"
+    },
+    {
+        "Application_duration": 2.17
+    }
+]

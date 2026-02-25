@@ -1,0 +1,160 @@
+{
+    "id": "a2ca704f-cb93-49bb-88f8-99cc6c0f0eb3",
+    "name": "Lab: Getting Started with Java and Spring Boot",
+    "description": "Detailed specification for generating a Project using Generative AI",
+    "schema": "2.0",
+    "owner": "Nuvepro",
+    "created_by": "rocky",
+    "created_on": "2026-02-25T17:18:33.207216",
+    "modified_by": "rocky",
+    "modified_on": "2026-02-25T17:19:37.152169",
+    "published_on": "",
+    "category": "",
+    "version": "Lab: Getting Started with Java and Spring Boot",
+    "locale": "en_US",
+    "plan_spec": {
+        "tech_domain": "Backend Development",
+        "tech_subdomain": "Java Spring Boot",
+        "application_domain": "Education",
+        "application_subdomain": "getting_started_java_springboot",
+        "target_audience": "Beginner Java Developers",
+        "difficulty_level": "Beginner",
+        "time_constraints": "2-4 hours",
+        "prerequisites": [
+            "Basic understanding of programming concepts",
+            "Familiarity with Java syntax",
+            "Familiarity with command-line tools and IDEs"
+        ],
+        "scope": [
+            "Java programming fundamentals",
+            "Setting up Java development environment",
+            "Spring Boot project structure",
+            "RESTful APIs with Spring Boot",
+            "Running and debugging a Spring Boot application",
+            "Dependency management using Maven",
+            "Basic testing with JUnit"
+        ],
+        "feature_set": [
+            "Spring Boot project initialization",
+            "REST Controller creation",
+            "Serving a simple Hello World endpoint",
+            "Project build and run configurations",
+            "Basic unit testing setup"
+        ],
+        "problem_statement_style": "scenario",
+        "projects": [
+            {
+                "project_name": "getting_started_java_springboot",
+                "tech_domain": "Backend Development",
+                "tech_subdomain": "Java Spring Boot",
+                "skill": "java_springboot",
+                "tech_stack": {
+                    "language": {
+                        "name": "Java",
+                        "version": "17+"
+                    },
+                    "framework": {
+                        "name": "Spring Boot",
+                        "version": "3.x"
+                    }
+                },
+                "testing": {
+                    "unit_testing": {
+                        "framework": "JUnit 5",
+                        "enabled": true
+                    },
+                    "integration_testing": {
+                        "framework": "Spring Boot Test",
+                        "enabled": true
+                    },
+                    "end_to_end_or_api_testing": {
+                        "framework": "MockMvc",
+                        "enabled": false
+                    }
+                },
+                "scope": {
+                    "java_basics": [
+                        "variables",
+                        "data types",
+                        "methods",
+                        "classes"
+                    ],
+                    "spring_boot_core": [
+                        "project structure",
+                        "application.properties",
+                        "main application class",
+                        "REST controllers",
+                        "dependency injection"
+                    ],
+                    "tooling": [
+                        "Maven build tool",
+                        "Using IntelliJ IDEA or Eclipse",
+                        "Running application",
+                        "Viewing logs"
+                    ],
+                    "testing": [
+                        "JUnit basics",
+                        "Testing endpoints"
+                    ]
+                },
+                "prerequisites": [
+                    "Java JDK installed",
+                    "Maven installed",
+                    "IDE installed (IntelliJ IDEA or Eclipse)"
+                ],
+                "runtime_environment": {
+                    "Build": "Maven",
+                    "Database": "MySQL (not used in this beginner Hello World, but included for completeness)",
+                    "Host": "localhost",
+                    "Port": "3306",
+                    "Username": "testuser",
+                    "Password": "Testuser123$",
+                    "IDE": "IntelliJ IDEA (recommended) / Eclipse",
+                    "OS Requirements": "Windows 10+, macOS Monterey+, Ubuntu 20.04+"
+                },
+                "learning_outcomes": [
+                    "Understand the basics of Java and Spring Boot application development",
+                    "Initialize and configure a Spring Boot project",
+                    "Develop and expose a RESTful endpoint in Spring Boot",
+                    "Build and run a Java application using Maven",
+                    "Write and execute basic unit and integration tests"
+                ],
+                "feature_set": [
+                    "Spring Boot initialization with Maven",
+                    "REST Controller serving a basic endpoint",
+                    "Application configuration with properties",
+                    "Basic JUnit 5 tests for APIs"
+                ],
+                "api_documentation": {
+                    "GET /hello": "Returns a simple Hello World message."
+                },
+                "output_resource_type": "code",
+                "dependency_type": null
+            }
+        ],
+        "acceptance_criteria": [
+            "The project can be checked out, built, and run locally without errors.",
+            "The exposed /hello endpoint returns the expected Hello World response.",
+            "Project structure conforms to standard Spring Boot conventions.",
+            "Unit tests for the controller pass successfully.",
+            "Developer can modify and extend the endpoint as an exercise."
+        ],
+        "deliverables": [
+            "Maven-based Spring Boot project",
+            "REST Controller with sample endpoint",
+            "Sample application.properties configuration",
+            "Unit tests using JUnit 5"
+        ],
+        "need_research": "False",
+        "learning_outcomes": [
+            "Ability to set up and work with Spring Boot projects",
+            "Understanding of RESTful API creation in Java",
+            "Familiarity with project structure and build lifecycle",
+            "Testing fundamentals for Spring Boot applications"
+        ],
+        "learning_style": "guided",
+        "assessment_type": null,
+        "user_prompt": "Generate lab for module: Getting Started with Java and Spring Boot",
+        "problem_statement": "Project Problem Statement (Scenario Style)\n\nTitle: Building the Foundation for a Digital Learning Platform with Spring Boot\n\nScenario\n\nYou are a Junior Backend Developer at EduLift, a fast-growing startup building online learning resources for schools. Recently, your team decided to modernize the platform's backend using Java Spring Boot, as it's known for its scalability and suitability for RESTful APIs. As part of your onboarding and to contribute immediately, you are tasked with laying down the foundational backend service of EduLift's new platform. This project is critical: it will serve as the technical baseline for all future educational modules and services.\n\nProblem Context\n\nEduLift’s ambition is to create modular, microservice-based backend systems for features such as student tracking, virtual classrooms, and interactive activities. However, before these advanced systems can be developed, the engineering team needs a standardized Spring Boot codebase. Your initial responsibility is to kickstart this transition by creating a minimal yet production-ready Spring Boot application that demonstrates best practices in project setup, API development, configuration management, and testing. This \"Hello World\" service will be a reference point for the entire engineering organization.\n\nObjective\n\nYour objective is to design, implement, and test a Spring Boot backend service that exposes a REST API endpoint returning a welcome message for users who wish to explore EduLift’s digital learning features. This service must be initialized properly, include clear project structure, support basic unit testing, and be fully documented on how to build and run it. Your deliverables will be reviewed by your lead engineer as the company’s reference template for all future backend modules.\n\nProject Requirements & Tasks\n\n1. Spring Boot Project Initialization  \n   - Initialize a new Java Spring Boot project using either Spring Initializr or your IDE’s built-in tool.  \n   - Set the group ID to `com.edulift`, the artifact ID to `edulift-welcome`, and ensure the Java version is compatible (Java 17+).  \n   - Include minimal necessary dependencies (primarily 'spring-boot-starter-web' for REST capabilities and testing starter).  \n   - Create a clean project structure following Maven (or Gradle) conventions.\n\n2. REST Controller Creation  \n   - Within the main package, create a REST controller class named `WelcomeController`.  \n   - Implement a GET endpoint at `/api/welcome` responding with the string:  \n     `Welcome to EduLift's Digital Learning Platform!`  \n   - Ensure that the endpoint uses appropriate Spring annotations (@RestController, @GetMapping).\n\n3. Serving a Simple Hello World Endpoint  \n   - The endpoint `/api/welcome` must return the exact welcome message in the body as plain text or JSON (bonus for both, if appropriate).  \n   - Document the endpoint URL and expected response in a simple markdown or text file in the project root (`README.md`).\n\n4. Project Build and Run Configurations  \n   - Ensure the project builds successfully using Maven (or Gradle) with `mvn clean package` (or equivalent).  \n   - Document the exact commands used to build and run the application via the terminal (include running as an executable JAR, e.g., `java -jar`).  \n   - Include sample output of a successful GET request to `/api/welcome` (use curl or Postman) in the documentation.\n\n5. Basic Unit Testing Setup  \n   - Add a basic unit test for the REST controller using JUnit and Spring Boot’s testing support.  \n   - The test should perform an HTTP GET request to `/api/welcome` and assert that the response is `200 OK` and the body matches the welcome message.  \n   - Ensure that all tests pass using the build tool (e.g., `mvn test`).\n\nLearning Outcomes\n\nBy completing this project, you will:\n- Demonstrate the ability to set up, structure, and configure a Spring Boot project following industry best practices.\n- Understand and implement RESTful API endpoints using Java and Spring Boot.\n- Gain familiarity with the project build process, command-line execution, and navigating the project lifecycle.\n- Apply fundamental testing techniques to Java backend applications using Spring Boot’s test suite.\n- Deliver clear and concise API documentation and developer instructions, setting a template for peer contributors.\n\nTarget Audience Alignment\n\nThis project is specifically designed for Beginner Java Developers who have foundational Java coding knowledge but are new to Spring Boot and modern backend development. All technical tasks assume familiarity with Java syntax, basic IDE use, and command-line operations, but do not require prior experience with backend frameworks.\n\nTime Constraints\n\n- Total estimated time: 2-4 hours\n    - Project setup and initialization: 30 min\n    - Controller implementation: 20 min\n    - Build and run configuration: 20 min\n    - Unit testing: 30 min\n    - Documentation and polish: 20-30 min\n    - Buffer for troubleshooting: 20-40 min\n\nSummary Checklist\n\n- [ ] Spring Boot project (`edulift-welcome`) initialized correctly\n- [ ] REST controller `WelcomeController` exposes `/api/welcome` endpoint\n- [ ] Endpoint returns required welcome message\n- [ ] Project builds/runs via standard Maven/Gradle commands as documented\n- [ ] Basic unit test(s) in place and passing for the welcome endpoint\n- [ ] Clear README with build/run/test instructions and example output\n\nBest Practices Reminder\n\nStay within the provided feature set—avoid implementing advanced features (e.g., database integration, authentication, or additional endpoints). Focus solely on initial project scaffolding, RESTful design, build/test lifecycle, and fundamental API delivery—all essential skills for backend Java development in the educational sector.\n\nDeliverables\n\n- Complete Java Spring Boot project directory (as a zipped file or repository).\n- `README.md` containing project overview, build/run instructions, endpoint documentation, and example outputs.\n- Passing unit test(s) validating the `/api/welcome` endpoint response.\n\nThis foundational project will directly contribute to EduLift’s ongoing innovation in digital education, ensuring that future backend modules for personalized learning, progress tracking, and engagement analytics all start from a robust, tested, and well-documented codebase."
+    }
+}
