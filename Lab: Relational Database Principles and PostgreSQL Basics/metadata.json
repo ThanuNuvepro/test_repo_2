@@ -1,0 +1,160 @@
+{
+    "id": "b1de82c3-2535-42c9-a2bb-130f11c3b0a4",
+    "name": "Lab: Relational Database Principles and PostgreSQL Basics",
+    "description": "Detailed specification for generating a Project using Generative AI",
+    "schema": "2.0",
+    "owner": "Nuvepro",
+    "created_by": "rocky",
+    "created_on": "2026-02-25T17:39:59.519592",
+    "modified_by": "rocky",
+    "modified_on": "2026-02-25T17:41:14.209711",
+    "published_on": "",
+    "category": "",
+    "version": "Lab: Relational Database Principles and PostgreSQL Basics",
+    "locale": "en_US",
+    "plan_spec": {
+        "tech_domain": "Database Systems",
+        "tech_subdomain": "Relational Databases & PostgreSQL",
+        "application_domain": "education",
+        "application_subdomain": "relational_database_principles_postgresql_basics",
+        "target_audience": "beginner to intermediate learners in database concepts, students or early-career developers",
+        "difficulty_level": "Beginner",
+        "time_constraints": "4-6 hours",
+        "prerequisites": [
+            "Basic computer literacy",
+            "Familiarity with fundamental programming concepts",
+            "Willingness to install and configure software tools"
+        ],
+        "scope": [
+            "Introduction to relational database concepts",
+            "Database schema design",
+            "Primary keys, foreign keys, constraints",
+            "Data normalization and ER diagrams",
+            "Introduction to SQL syntax",
+            "CRUD operations in SQL (Create, Read, Update, Delete)",
+            "Setting up and connecting to PostgreSQL",
+            "Using psql CLI",
+            "Basic SELECT queries and filtering",
+            "Table creation and modification",
+            "Simple JOIN operations"
+        ],
+        "feature_set": [
+            "PostgreSQL setup instructions",
+            "Sample healthcare/finance dataset (simulated, not real domain files)",
+            "SQL script for schema and CRUD sample",
+            "Interactive exercises and queries",
+            "Error handling best practices in SQL",
+            "Instructions for connecting and querying with Python (psycopg2/SQLAlchemy)",
+            "Lab environment/manual for instructors"
+        ],
+        "problem_statement_style": "scenario",
+        "projects": [
+            {
+                "project_name": "relational_database_principles_postgresql_basics_python_data_and_ai",
+                "tech_domain": "Database Systems",
+                "tech_subdomain": "Relational Databases & PostgreSQL",
+                "skill": "python_data_and_ai",
+                "tech_stack": {
+                    "language": {
+                        "primary": "Python",
+                        "secondary": "SQL"
+                    },
+                    "framework": {
+                        "orm": "SQLAlchemy",
+                        "cli": "psql"
+                    }
+                },
+                "testing": {
+                    "unit_testing": {
+                        "framework": "pytest",
+                        "db_mocking": "pytest-postgresql",
+                        "sample_sql": true
+                    },
+                    "integration_testing": {
+                        "framework": "pytest",
+                        "db_test_cases": true
+                    },
+                    "end_to_end_or_api_testing": null
+                },
+                "scope": {
+                    "relational_database_principles": [
+                        "entities, relationships, one-to-one, one-to-many, many-to-many mappings",
+                        "normalization (1NF, 2NF, 3NF basics)"
+                    ],
+                    "postgresql_basics": [
+                        "installation and setup",
+                        "connecting to a PostgreSQL database",
+                        "creating and dropping tables",
+                        "inserting, updating, and deleting data"
+                    ],
+                    "sql": [
+                        "select, where, order by, group by statements",
+                        "aggregations and simple joins"
+                    ],
+                    "python_integration": [
+                        "running SQL from Python",
+                        "using SQLAlchemy for database interactions",
+                        "handling database connection errors"
+                    ]
+                },
+                "prerequisites": [
+                    "Python 3.x installed",
+                    "Basic understanding of shell/command line",
+                    "No prior database experience required"
+                ],
+                "runtime_environment": {
+                    "Build": "N/A",
+                    "Database": "PostgreSQL",
+                    "Host": "localhost",
+                    "Port": "5432",
+                    "Username": "testuser",
+                    "Password": "Testuser123$",
+                    "IDE": "Visual Studio Code",
+                    "OS Requirements": "Windows 10+, macOS Monterey+, Ubuntu 20.04+"
+                },
+                "learning_outcomes": [
+                    "Understand database normalization and schema design",
+                    "Execute core SQL statements in PostgreSQL",
+                    "Manage basic data operations (CRUD) in a PostgreSQL environment",
+                    "Connect Python applications to PostgreSQL databases",
+                    "Translate simple business rules into database tables and queries",
+                    "Troubleshoot typical SQL errors"
+                ],
+                "feature_set": [
+                    "End-to-end walkthrough of setting up PostgreSQL locally",
+                    "Schema and data definition examples for a simple scenario (non-domain specific)",
+                    "Practice queries for data manipulation and retrieval",
+                    "Python examples for executing SQL against PostgreSQL",
+                    "Instructor solutions and test scripts"
+                ],
+                "api_documentation": null,
+                "output_resource_type": "code",
+                "dependency_type": null
+            }
+        ],
+        "acceptance_criteria": [
+            "PostgreSQL can be installed and run on a local environment",
+            "Learners can define and create a normalized schema (with at least two related tables)",
+            "Demonstrate CRUD operations via SQL scripts and verify results using SELECT statements",
+            "Sample Python script successfully connects and queries the local database",
+            "Provided test cases for the SQL queries and data integrity pass successfully"
+        ],
+        "deliverables": [
+            "Step-by-step PostgreSQL setup guide",
+            "Sample database schema and SQL scripts",
+            "Practice exercise scripts (SQL and Python)",
+            "Automated test scripts for database setup and queries",
+            "Instructor solution set"
+        ],
+        "need_research": "False",
+        "learning_outcomes": [
+            "Acquire foundational knowledge in relational database theory",
+            "Apply practical SQL and data modeling skills",
+            "Develop confidence in basic database programming using Python"
+        ],
+        "learning_style": "guided",
+        "assessment_type": null,
+        "user_prompt": "Generate lab for module: Relational Database Principles and PostgreSQL Basics",
+        "problem_statement": "Problem Statement: Building a Student Performance Management Database for an Educational Institution using PostgreSQL and Python\n\nScenario: Real-World Role\n\nAs a newly hired Data Analyst at EduPro Academy, a mid-sized educational institution, you have been tasked with improving the management and analysis of student performance data. The current process relies on scattered spreadsheets that make reporting and analytics slow and error-prone. To address this, you will lead the design and implementation of a foundational relational database system using PostgreSQL. This system will store, manipulate, and retrieve simulated student performance data, laying the groundwork for future data-driven initiatives. You will also demonstrate basic integration with Python, empowering other departments with easy data access for reporting.\n\nProblem Context\n\nEducational institutions increasingly rely on data-driven decisions, such as identifying students who may need academic support or tracking the effectiveness of courses over time. However, without a robust backend system, extracting insights is difficult and manual. Your challenge is to establish this backbone, ensuring the system is scalable, reliable, and accessible for future analytics and reporting.\n\nObjective\n\nYour objective is to:\n\n- Set up a PostgreSQL database to manage student performance data.\n- Design and implement a relational schema for students, courses, enrollments, and grades.\n- Load and manipulate a sample (simulated) dataset resembling real academic records.\n- Implement basic CRUD (Create, Read, Update, Delete) operations via SQL scripts.\n- Execute interactive queries to retrieve actionable insights (e.g., top performers, students at risk, average grades per course).\n- Apply error handling best practices in SQL and Python.\n- Connect and query the database using Python (with either psycopg2 or SQLAlchemy).\n- Prepare an instructor-friendly lab manual to support teaching and reproducibility of your steps.\n\nAssumptions about Target Audience\n\nThis project is designed for beginner to intermediate learners who:\n- Are familiar with basic relational database concepts (tables, keys, SQL basics).\n- Have entry-level experience with Python programming.\n- Have not worked with production-scale databases or advanced SQL constructs.\n- Are interested in practical, hands-on database applications relevant to real-world educational institutions.\n\nAll resources and instructions are strictly limited to concepts found in relational database theory, relational modeling, SQL CRUD operations, querying fundamentals, basic error handling, and Python-PostgreSQL connectivity. No advanced database concepts, security concerns, or machine learning techniques are required.\n\nTime Expectation\n\nThe tasks are chunked to be achievable within 4-6 hours, ideal for a lab, in-class project, or structured self-study module.\n\nTask Breakdown and Stepwise Instructions\n\n1. PostgreSQL Setup (30 minutes)\n   - Provide clear, step-by-step instructions to install PostgreSQL and access the psql CLI or setup a GUI tool (e.g., pgAdmin).\n   - Guide the learner to create a new database user and a database named student_performance.\n\n2. Data Modeling & Schema Creation (45 minutes)\n   - Outline an ER diagram (provided in lab manual) for four main entities: Students, Courses, Enrollments, and Grades.\n   - Provide a complete SQL script to:\n     - Create tables with appropriate primary keys, foreign keys, and basic types.\n     - Insert constraints to ensure data integrity (e.g., unique email addresses, valid grade range).\n   - Example snippet:\n     ```sql\n     CREATE TABLE students (\n         student_id SERIAL PRIMARY KEY,\n         first_name VARCHAR(50),\n         last_name VARCHAR(50),\n         email VARCHAR(100) UNIQUE NOT NULL,\n         registration_date DATE\n     );\n     -- Similar DDL for courses, enrollments, grades...\n     ```\n\n3. Load Simulated Academic Dataset (30 minutes)\n   - Supply a CSV or SQL file with sample student, course, enrollment, and grade data (non-sensitive, simulated).\n   - Step-by-step instructions to bulk load data (using COPY command or INSERT scripts).\n\n4. CRUD Operations Script (45 minutes)\n   - Provide an SQL script (with explanation) performing:\n     - Adding new students/courses.\n     - Recording new enrollments and updating grades.\n     - Deleting a student and handling cascading deletions (e.g., remove enrollments).\n     - Updating courses or correcting student info.\n   - Explicitly showcase integrity constraints and how they operate.\n   - Emphasize and demonstrate error handling best practices for SQL (e.g., handling UNIQUE or FOREIGN KEY violations).\n\n5. Interactive SQL Queries (45 minutes)\n   - Define 4-6 common educational queries, such as:\n     - Retrieve all students enrolled in a particular course.\n     - Calculate average grade per course and per student.\n     - List students at risk (e.g., GPA below threshold).\n     - Output top 3 performing courses based on average grades.\n   - Each query comes with a guided explanation.\n   - Include challenges for learners: “Modify the following query to display...” and include expected result sets for validation.\n\n6. Error Handling Best Practices (20 minutes)\n   - Short documentation and code samples to:\n     - Catch and interpret common SQL errors (e.g., data type mismatch, constraint violations).\n     - Use TRY...EXCEPT in Python with psycopg2 or SQLAlchemy to gracefully handle database exceptions.\n   - Examples of rolling back transactions when errors occur.\n\n7. Python Integration (psycopg2/SQLAlchemy) (1 hour)\n   - Detailed steps to:\n     - Install necessary Python libraries.\n     - Connect to the PostgreSQL database.\n     - Execute and fetch query results.\n     - Perform simple data inserts and updates through Python scripts.\n     - Handle exceptions, print informative messages.\n     - (Optional) Use Pandas for result display.\n   - Provide clean, annotated script templates for both psycopg2 and SQLAlchemy approaches.\n\n8. Lab Environment/Manual for Instructors (30 minutes)\n   - Dedicated instructor’s guide with:\n     - Learning objectives mapped to each phase of the project.\n     - Troubleshooting common issues (e.g., connection problems, constraint errors).\n     - Sample solutions and expected outputs.\n     - Suggestions for assessment, extension ideas, and formative feedback.\n   - Checklist for completion and student self-evaluation prompts.\n\nLearning Outcomes Addressed\n\nUpon completing this project, learners will:\n- Acquire foundational knowledge in relational database theory by designing a normalized schema for academic data and understanding its real-world application.\n- Apply practical SQL and data modeling skills by authoring and executing table creation, data manipulation, and analytical queries on educational data.\n- Develop confidence in basic database programming using Python by building scripts that interact with PostgreSQL, demonstrating CRUD operations, data retrieval, and robust error handling.\n\nClarity and Relevance\n\nAll steps and documentation are tailored for database beginners and early-career developers, with real-world relevance to education. No advanced features (like triggers, complex stored procedures, or advanced analytics) are required—ensuring a focus on essential, practical skills. All instructions, examples, and the simulated dataset remain strictly within the required scope (see Feature Set above). Provided tasks and queries are actionable, unambiguous, and build sequentially, culminating in a working, demonstrable education data management system.\n\nSummary Table of Deliverables\n\n| Task                                  | Learner Output                                              |\n|----------------------------------------|------------------------------------------------------------|\n| PostgreSQL Setup                       | Working local database and user account                     |\n| Schema Creation                        | Script generating normalized tables and relationships       |\n| Data Loading                           | Populated tables with realistic sample educational data     |\n| CRUD SQL Script                        | File with documented Create/Read/Update/Delete examples     |\n| Interactive Exercises                  | List of queries with learner-generated result screenshots   |\n| Error Handling Practice                | Notes and code samples handling SQL and Python exceptions   |\n| Python Integration                     | Python script(s) performing database access and updates     |\n| Lab Manual (for instructors)           | PDF or doc with instructions, tips, and assessment rubrics  |\n\nEstimated Completion Time: 4-6 hours.\n\nAll project assets (scripts, dataset, instructions) to be bundled for easy classroom or remote learning deployment.\n\nBy the end of this project, each learner will have implemented a functional foundation for student data management in education—building job-ready skills in relational database modeling, SQL, and Python-based database programming, strictly within the defined scope."
+    }
+}
