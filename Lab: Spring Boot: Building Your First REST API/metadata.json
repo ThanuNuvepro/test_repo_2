@@ -1,0 +1,168 @@
+{
+    "id": "f1550802-5fce-4acd-aa23-cf4185c42a42",
+    "name": "Lab: Spring Boot: Building Your First REST API",
+    "description": "Detailed specification for generating a Project using Generative AI",
+    "schema": "2.0",
+    "owner": "Nuvepro",
+    "created_by": "rocky",
+    "created_on": "2026-02-25T18:14:29.807440",
+    "modified_by": "rocky",
+    "modified_on": "2026-02-25T18:15:10.468018",
+    "published_on": "",
+    "category": "",
+    "version": "Lab: Spring Boot: Building Your First REST API",
+    "locale": "en_US",
+    "plan_spec": {
+        "tech_domain": "Backend Development",
+        "tech_subdomain": "Spring Boot",
+        "application_domain": "Education",
+        "application_subdomain": "rest_api_lab",
+        "target_audience": "Beginner Java developers, students learning web development, and software engineering learners",
+        "difficulty_level": "Beginner",
+        "time_constraints": "2 hours",
+        "prerequisites": [
+            "Basic knowledge of Java programming",
+            "Familiarity with object-oriented programming concepts",
+            "Basic understanding of RESTful API principles",
+            "Experience with build tools like Maven or Gradle (preferred but not mandatory)"
+        ],
+        "scope": [
+            "Understanding Fundamental Concepts of REST",
+            "Setting up a Spring Boot Project",
+            "Defining REST Controllers",
+            "Request Mapping (GET, POST, PUT, DELETE)",
+            "Serialization and Deserialization (JSON payloads)",
+            "Basic Exception Handling",
+            "Testing REST Endpoints",
+            "Project Structure and Dependency Management",
+            "Using Postman or cURL for API Testing",
+            "Introduction to Spring Boot Annotations"
+        ],
+        "feature_set": [
+            "Spring Boot project setup",
+            "Single REST controller implementation",
+            "CRUD operations for a sample entity (e.g., `User` or `Book`)",
+            "Use in-memory data structures for persistence (no database required for first lab)",
+            "Basic error handling (e.g., resource not found)",
+            "JSON response and request parsing",
+            "API documentation basics using Swagger/OpenAPI (optional for bonus)"
+        ],
+        "problem_statement_style": "scenario",
+        "projects": [
+            {
+                "project_name": "rest_api_lab_spring_boot",
+                "tech_domain": "Backend Development",
+                "tech_subdomain": "Spring Boot",
+                "skill": "springboot",
+                "tech_stack": {
+                    "language": {
+                        "name": "Java",
+                        "version": "17"
+                    },
+                    "framework": {
+                        "name": "Spring Boot",
+                        "version": "3.x"
+                    }
+                },
+                "testing": {
+                    "unit_testing": {
+                        "framework": "JUnit 5",
+                        "spring_test": true,
+                        "mocking": "Mockito"
+                    },
+                    "integration_testing": {
+                        "framework": "Spring Boot Test",
+                        "mockmvc": true
+                    },
+                    "end_to_end_or_api_testing": {
+                        "tool": "Postman",
+                        "alternative": "cURL",
+                        "openapi_validation": false
+                    }
+                },
+                "scope": {
+                    "core_concepts": [
+                        "RESTful principles",
+                        "Spring Boot annotations",
+                        "HTTP methods: GET, POST, PUT, DELETE",
+                        "Serialization/Deserialization",
+                        "Exception handling in Spring",
+                        "API testing and verification"
+                    ],
+                    "project_specific": [
+                        "Implementing CRUD endpoints",
+                        "Mapping requests and responses",
+                        "Structuring a simple Spring Boot application"
+                    ]
+                },
+                "prerequisites": [
+                    "Java basics",
+                    "Introduction to HTTP/REST principles"
+                ],
+                "runtime_environment": {
+                    "Build": "Maven",
+                    "IDE": "IntelliJ IDEA (recommended), Eclipse, or VS Code",
+                    "OS Requirements": "Windows 10+, macOS Monterey+, or Ubuntu 20.04+",
+                    "Java_version": "17",
+                    "Database": "N/A (in-memory for basic lab)",
+                    "Username": "testuser",
+                    "Password": "Testuser123$"
+                },
+                "learning_outcomes": [
+                    "Set up and configure a Spring Boot application",
+                    "Implement and document simple REST APIs",
+                    "Understand Spring Boot’s request mapping and dependency injection",
+                    "Test REST APIs using Postman, cURL, and unit/integration testing frameworks",
+                    "Handle JSON data with Java and Spring Boot",
+                    "Understand Spring Boot’s project structure"
+                ],
+                "feature_set": [
+                    "Create a Spring Boot project",
+                    "Define an entity and REST controller",
+                    "Expose endpoints for CRUD operations",
+                    "Simple in-memory persistence",
+                    "Basic error handling",
+                    "Unit and integration testing of endpoints",
+                    "API testing via external tools"
+                ],
+                "api_documentation": {
+                    "GET /entity": "Returns the list of all entities.",
+                    "GET /entity/{id}": "Returns details for a specific entity.",
+                    "POST /entity": "Creates a new entity.",
+                    "PUT /entity/{id}": "Updates an existing entity.",
+                    "DELETE /entity/{id}": "Deletes an existing entity."
+                },
+                "output_resource_type": "code",
+                "dependency_type": null
+            }
+        ],
+        "acceptance_criteria": [
+            "Spring Boot project builds successfully with Maven",
+            "All REST endpoints return correct responses (status codes, JSON structure)",
+            "All expected CRUD operations are functional",
+            "Unit and integration tests pass successfully",
+            "Clear project structure as per Spring Boot conventions",
+            "Demonstrated basic error handling (404, validation errors)",
+            "Able to test endpoints using tools like Postman"
+        ],
+        "deliverables": [
+            "Complete Spring Boot project source code",
+            "README with setup and running instructions",
+            "Unit and integration test classes",
+            "Sample Postman collection or cURL commands for API testing",
+            "Sample JSON payloads for input/output",
+            "Swagger/OpenAPI configuration file (optional, if implemented)"
+        ],
+        "need_research": "False",
+        "learning_outcomes": [
+            "Hands-on experience with building and configuring REST APIs using Spring Boot",
+            "Understanding CRUD operations and their mapping in REST",
+            "Familiarity with testing and validating RESTful services",
+            "Basic troubleshooting and debugging within Spring Boot context"
+        ],
+        "learning_style": "guided",
+        "assessment_type": null,
+        "user_prompt": "Generate lab for module: Spring Boot: Building Your First REST API",
+        "problem_statement": "Problem Statement: Building a Simple Student Management RESTful API for an Education Platform (rest_api_lab)\n\nScenario: Real-World Role & Problem Context\n\nYou have recently joined an educational technology startup as a Junior Backend Developer. Your team is tasked with building the foundation of a new \"Student Management\" module for the platform, which will eventually support teachers in managing their students’ information efficiently. As part of a phased delivery approach, you are responsible for building the first version of the backend system that will serve as a RESTful API for managing student records.\n\nCurrently, the startup wants a proof of concept that enables basic operations (Create, Read, Update, Delete) on student entities—all managed in-memory to accelerate prototyping and feedback. While future versions will adopt robust persistence solutions, the goal for this first lab is speed, simplicity, and clarity. API clients, such as web or mobile developers on your team, should be able to interact with a well-defined API to perform CRUD operations on students.\n\nObjective\n\nDevelop a basic Spring Boot RESTful API that supports full CRUD (Create, Read, Update, Delete) for a `Student` entity using in-memory data structures. Your application will consist of a single REST controller with endpoints that allow other components in the education platform to manage student records via JSON. You will also implement straightforward error handling for common cases, ensure proper request and response formats, and (optionally) provide basic API documentation using Swagger/OpenAPI specifications.\n\nProject Constraints & Feature Set\n\n- Spring Boot project setup only; no database integration—the backing data is held in application memory (e.g., using a `Map` or `List`).\n- Implement a single REST controller class named `StudentController`.\n- CRUD operations:\n  - Create a new student (POST).\n  - Read/get details of all students or a single student (GET).\n  - Update an existing student’s data (PUT).\n  - Delete a student (DELETE).\n- Basic error handling: For example, return a suitable HTTP error/status code if a requested student is not found.\n- Handle JSON input and output for all endpoints; all communication is strictly via JSON.\n- (Bonus) Add basic auto-generated API documentation using Swagger/OpenAPI.\n- Project must be executable within a standard Spring Boot environment (Spring Initializr, Maven/Gradle).\n\nAssumptions About Learners\n\n- You are a beginner Java developer, a student learning web development, or in early-stage software engineering.\n- You are familiar with Java syntax, basic object-oriented design, and have fundamental knowledge of web concepts (like HTTP verbs and JSON payloads).\n- You have never built a Spring Boot REST API before but want hands-on experience.\n\nLearning Outcomes Mapping\n\nBy completing this project, you will:\n\n- Gain hands-on experience with building and configuring a REST API using Spring Boot.\n- Deepen your understanding of mapping CRUD operations to RESTful services in Java.\n- Become familiar with the processes of parsing and serializing JSON requests and responses with Spring Boot.\n- Practice fundamental error handling techniques in a RESTful context (e.g., handling \"not found\" scenarios).\n- Learn to test and validate API endpoints using tools like Postman, curl, or browser-based REST clients.\n- Start basic troubleshooting and debugging in the Spring Boot context by solving common beginner mistakes (like handling missing fields or malformed requests).\n- (Bonus) Discover the value of API documentation with Swagger/OpenAPI.\n\nStep-by-Step Project Execution (Technical Instructions)\n\n1. **Spring Boot Project Setup (15 minutes)**\n   - Use Spring Initializr (https://start.spring.io/) to generate a new project.\n   - Select Java, your preferred build tool (Maven or Gradle), and add the following dependencies:\n     - Spring Web\n     - (Optional, for bonus) Springdoc OpenAPI or Swagger (for API documentation)\n   - Import the project into your IDE (e.g., IntelliJ IDEA, Eclipse, or VS Code).\n\n2. **Define the Student Entity (10 minutes)**\n   - Create a `Student` Java class to represent student records with at least the following fields:\n     - `Long id`\n     - `String name`\n     - `String email`\n     - `String course`\n   - Add standard constructors, getters, and setters.\n\n3. **In-memory Persistence Layer (10 minutes)**\n   - In the controller class, store student data in a suitable data structure, like `Map<Long, Student>`.\n   - Initialize the in-memory store as a class field.\n\n4. **StudentController Implementation (35 minutes)**\n   - Annotate your controller class with `@RestController` and map it to `/students`.\n   - Implement endpoints for:\n     - **Create (POST `/students`)**\n       - Accept a JSON payload and add a new `Student` to your collection.\n       - Generate an auto-incrementing ID if none is provided.\n     - **Read**\n       - GET `/students`: Return all students as a JSON array.\n       - GET `/students/{id}`: Return a specific student by ID or proper error if not found.\n     - **Update (PUT `/students/{id}`)**\n       - Replace an existing student record with the new details.\n       - Return appropriate status if the student doesn’t exist.\n     - **Delete (DELETE `/students/{id}`)**\n       - Remove a student by ID; return an error if not found.\n   - Ensure all inputs and outputs are in JSON and conventional HTTP status codes are sent.\n\n5. **Basic Error Handling (15 minutes)**\n   - Return `404 Not Found` if a student ID does not exist.\n   - Return `400 Bad Request` for invalid/malformed requests.\n   - Use `@ResponseStatus` or appropriate exception handlers as needed.\n\n6. **Testing & Validation (15 minutes)**\n   - Test all endpoints using Postman, curl, or a similar REST client.\n   - Validate well-formed request/response bodies, status codes, and error scenarios.\n\n7. **(Bonus) API Documentation (10 minutes)**\n   - Integrate OpenAPI/Swagger and expose API documentation at `/swagger-ui.html` or `/api-docs`.\n   - Annotate endpoints or configure the documentation generator as needed.\n\n8. **Troubleshooting as You Execute**\n   - Log and fix common errors (e.g., null pointers, incorrect mappings, JSON parsing issues).\n   - Use IDE debugging tools or console output to trace and resolve issues.\n\nTimeline & Milestones (Total: 2 hours)\n\n- Project Setup & Student Entity: 25 minutes\n- Controller & CRUD Endpoints: 35 minutes\n- Error Handling & Persistence Layer: 25 minutes\n- Testing/Validation: 15 minutes\n- (Bonus) API Documentation: 10 minutes\n- Buffer/Troubleshooting: 10 minutes\n\nFinal Deliverables\n\n- Complete, runnable Spring Boot application with a `StudentController` that enables CRUD operations in-memory.\n- Well-structured code following Java and Spring Boot conventions.\n- A short README or embedded comments explaining how to run and test the project.\n- (Optional bonus) API documentation accessible via Swagger/OpenAPI.\n\nRelevance & Practical Application\n\nYour work forms the starting point for all future student data management features in the platform, providing a hands-on, real-world backend development scenario tailored to the education sector. By building from scratch in a controlled scope, you not only gain practical Spring Boot skills but also directly impact how teachers and staff will interact with your platform in the future. All steps, deliverables, and checks are engineered to match the skills, tools, and time constraints of a beginner learner in Java and web development.\n\nStay strictly within the documented feature set and complete your lab project in the designated two-hour slot. Good luck, Junior Backend Developer!"
+    }
+}
