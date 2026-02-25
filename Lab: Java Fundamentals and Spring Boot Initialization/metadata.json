@@ -1,0 +1,146 @@
+{
+    "id": "1e36ea3e-89eb-4280-86e1-ab3961a1e305",
+    "name": "Lab: Java Fundamentals and Spring Boot Initialization",
+    "description": "Detailed specification for generating a Project using Generative AI",
+    "schema": "2.0",
+    "owner": "Nuvepro",
+    "created_by": "rocky",
+    "created_on": "2026-02-25T17:03:55.440766",
+    "modified_by": "rocky",
+    "modified_on": "2026-02-25T17:05:08.664245",
+    "published_on": "",
+    "category": "",
+    "version": "Lab: Java Fundamentals and Spring Boot Initialization",
+    "locale": "en_US",
+    "plan_spec": {
+        "tech_domain": "Backend Development",
+        "tech_subdomain": "Spring Boot",
+        "application_domain": "education",
+        "application_subdomain": "java_fundamentals_and_spring_boot_initialization",
+        "target_audience": "beginner to intermediate Java developers",
+        "difficulty_level": "Beginner",
+        "time_constraints": "2-3 hours",
+        "prerequisites": [
+            "Basic understanding of programming concepts",
+            "Java JDK installed",
+            "Integrated Development Environment (IDE) like IntelliJ IDEA, Eclipse, or VS Code"
+        ],
+        "scope": [
+            "Java language fundamentals (variables, data types, control structures, methods)",
+            "Object-Oriented Programming (OOP) in Java (classes, objects, inheritance, polymorphism)",
+            "Maven/Gradle project structure",
+            "Introduction to Spring Boot",
+            "Spring Boot project initialization",
+            "Dependency management",
+            "Building and running a simple Spring Boot application",
+            "REST API basics"
+        ],
+        "feature_set": [
+            "Simple Java classes demonstrating OOP",
+            "Spring Boot project with proper structure",
+            "REST Controller with a basic endpoint",
+            "README with setup and run instructions"
+        ],
+        "problem_statement_style": "scenario",
+        "projects": [
+            {
+                "project_name": "java_fundamentals_and_spring_boot_initialization_springboot",
+                "tech_domain": "Backend Development",
+                "tech_subdomain": "Spring Boot",
+                "skill": "springboot",
+                "tech_stack": {
+                    "language": {
+                        "name": "Java",
+                        "version": "17"
+                    },
+                    "framework": {
+                        "name": "Spring Boot",
+                        "version": "3.x"
+                    }
+                },
+                "testing": {
+                    "unit_testing": {
+                        "framework": "JUnit 5",
+                        "coverage_enabled": true
+                    },
+                    "integration_testing": {
+                        "framework": "Spring Boot Test",
+                        "mocking_tool": "Mockito"
+                    },
+                    "end_to_end_or_api_testing": {
+                        "framework": "RestAssured",
+                        "enabled": true
+                    }
+                },
+                "scope": {
+                    "java_fundamentals": [
+                        "Variables and Data Types",
+                        "Control Statements (if, switch, loops)",
+                        "Methods and Parameters",
+                        "Classes and Objects",
+                        "Inheritance and Polymorphism"
+                    ],
+                    "spring_boot_initialization": [
+                        "Project structure with Maven/Gradle",
+                        "Main class and application entrypoint",
+                        "Dependency Injection overview",
+                        "Basic REST Controller"
+                    ]
+                },
+                "prerequisites": [
+                    "Basic programming experience",
+                    "Installed Java JDK",
+                    "Familiarity with using command line"
+                ],
+                "runtime_environment": {
+                    "Build": "Maven",
+                    "IDE": "IntelliJ IDEA or Eclipse",
+                    "OS Requirements": "Windows 10+, macOS Monterey+, or Ubuntu 20.04+"
+                },
+                "learning_outcomes": [
+                    "Ability to create and organize a Java project",
+                    "Understanding of OOP concepts in Java",
+                    "Proficiency in initializing and configuring a Spring Boot application",
+                    "Building and running RESTful services",
+                    "Familiarity with project structure and dependency management"
+                ],
+                "feature_set": [
+                    "Java project setup and build configuration",
+                    "OOP examples",
+                    "Spring Boot initialization",
+                    "First REST endpoint",
+                    "Unit and integration tests",
+                    "Run and test application locally"
+                ],
+                "api_documentation": null,
+                "output_resource_type": "code",
+                "dependency_type": null
+            }
+        ],
+        "acceptance_criteria": [
+            "Project builds successfully using Maven",
+            "All test cases pass (unit, integration, and API tests)",
+            "Spring Boot application starts without errors",
+            "Basic REST API responds with expected result",
+            "Documentation is clear and describes setup, execution, and endpoints"
+        ],
+        "deliverables": [
+            "Spring Boot Java project with source code",
+            "Sample Java classes demonstrating OOP",
+            "REST controller with at least one endpoint",
+            "Test cases for logic and API",
+            "README with setup and usage instructions"
+        ],
+        "need_research": "False",
+        "learning_outcomes": [
+            "Mastery of foundational Java and OOP principles",
+            "Ability to bootstrap and configure a Spring Boot project",
+            "Understanding of REST API basics within Spring Boot",
+            "Experience with unit and API testing in a Java environment"
+        ],
+        "learning_style": "guided",
+        "assessment_type": null,
+        "user_prompt": "Generate lab for module: Java Fundamentals and Spring Boot Initialization",
+        "problem_statement": "Scenario-Based Problem Statement: Spring Boot Backend for a Student Progress Tracker\n\nScenario:  \nYou are a Junior Backend Developer newly hired by EduPro Solutions, an edtech startup specializing in digital tools for classroom engagement. The company has identified that teachers frequently struggle to track and quickly access basic student progress information for classroom quizzes and assignments. EduPro needs a simple backend solution to serve as the foundation for a future full-featured application that helps educators manage student performance data.\n\nProject Objective:  \nYour task is to design and implement a minimalistic Spring Boot REST API called Student Progress Tracker. This API will allow teachers to:\n- Record basic information about students.\n- Add/update quiz or assignment scores for each student.\n- Retrieve a summary of student performance using a REST endpoint.\n\nYou must apply basic Java fundamentals (including OOP principles), initialize and organize a properly structured Spring Boot project, and provide clear setup instructions in a README. You will also practice writing simple unit and API tests to ensure your endpoints behave as expected.\n\nTarget Audience Alignment:  \nThis project is aimed at beginner to intermediate Java developers starting to learn backend development and Spring Boot. You should be comfortable with Java syntax, basic OOP concepts (classes, objects, constructors, encapsulation), and have very basic awareness of the Spring ecosystem (but not deep experience). All tasks are appropriate for learners at this level; no advanced frameworks, database integrations, or security are expected.\n\nTimeframe:  \nThe project is designed to be completed in 2–3 hours.\n\nDeliverables and Feature Set:  \n\n1. Simple Java Classes Demonstrating OOP  \n    - Design at least two Java classes: Student and Assignment.\n    - The Student class must have basic fields such as id, name, and a collection of Assignment objects.\n    - The Assignment class must include fields like assignmentName and score.\n    - Use constructors, getters/setters, and encapsulation.\n\n2. Spring Boot Project With Proper Structure  \n    - Bootstrap a new Maven or Gradle Spring Boot project (using https://start.spring.io or your IDE).\n    - Adhere to conventional Spring Boot project structuring:\n        - Place models/entities in a model or entity package.\n        - Controllers in a controller package.\n        - Application entrypoint in a root package.\n    - Include the minimum dependencies to run a REST API (i.e., spring-boot-starter-web).\n\n3. REST Controller With a Basic Endpoint  \n    - Create at least one REST controller class.\n    - Implement a POST endpoint (/students) to add a new student and their first assignment.\n    - Implement a PUT endpoint (/students/{id}/assignments) to add or update assignments for a student.\n    - Implement a GET endpoint (/students/{id}/summary) that returns a summary object: student name, number of assignments, and average score.\n    - All data can be managed in-memory (use an ArrayList/Map as a “database”).\n    - Make sure responses use appropriate HTTP status codes.\n\n4. README With Setup and Run Instructions  \n    - Provide a clear, concise README file with:\n        - Java version and prerequisites.\n        - Step-by-step instructions to build, run, and test the application.\n        - Example HTTP requests and sample JSON payloads for all endpoints.\n\n5. Basic Unit and API Testing  \n    - Write at least two unit tests for business logic (e.g., verifying the average score calculation).\n    - Write at least one simple integration or API test for an endpoint, using either JUnit or Spring’s MockMvc.\n\nLearning Outcomes and Project Relevance:  \nCompletion of this project will demonstrate your ability to:\n- Apply fundamental Java and OOP principles by modeling students and their assignments.\n- Bootstrap and configure a minimal Spring Boot project using industry-standard structure.\n- Understand and build REST API endpoints to manipulate and retrieve student progress data.\n- Write and run unit/API tests in a Java backend environment.\n- Organize and communicate technical work clearly via a README.\n\nStrict Boundaries:  \nYou are strictly limited to:\n- Java OOP fundamentals (classes, objects, methods, encapsulation).\n- Basic Spring Boot concepts (controllers, entry point, application structuring).\n- REST endpoint implementation—no authentication, no frontend, no database integration.\n- Basic use of in-memory data structures only.\n- Simple tests with JUnit or Spring’s built-in testing tools.\n- Clear, concise documentation.\n\nProject Execution Steps and Timeline (2–3 hours):  \n1. Scaffold the Spring Boot project and set up packages – 15 min  \n2. Create Student and Assignment Java classes demonstrating OOP – 20 min  \n3. Implement in-memory data storage and business logic – 20 min  \n4. Implement the REST controller and all specified endpoints – 30 min  \n5. Write unit and simple integration/API tests – 25 min  \n6. Write the README with setup instructions – 20 min  \n7. Final review, local testing, and submission – 10 min\n\nSummary:  \nBy the end of this challenge, you will have created a simple, well-structured, and tested Spring Boot backend service that demonstrates your understanding of Java fundamentals, OOP, and the basics of RESTful API development in an educational context. This forms a practical foundation for further backend development learning and real-world applications in the edtech space."
+    }
+}
