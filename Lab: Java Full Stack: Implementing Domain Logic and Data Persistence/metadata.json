@@ -1,0 +1,167 @@
+{
+    "id": "090dd091-15c1-4404-a538-1b03b47a72a7",
+    "name": "Lab: Java Full Stack: Implementing Domain Logic and Data Persistence",
+    "description": "Detailed specification for generating a Project using Generative AI",
+    "schema": "2.0",
+    "owner": "Nuvepro",
+    "created_by": "rocky",
+    "created_on": "2026-02-25T18:18:44.735369",
+    "modified_by": "rocky",
+    "modified_on": "2026-02-25T18:19:33.237764",
+    "published_on": "",
+    "category": "",
+    "version": "Lab: Java Full Stack: Implementing Domain Logic and Data Persistence",
+    "locale": "en_US",
+    "plan_spec": {
+        "tech_domain": "Backend and Full Stack Development",
+        "tech_subdomain": "Java Full Stack",
+        "application_domain": "education",
+        "application_subdomain": "implementing_domain_logic_and_data_persistence",
+        "target_audience": "students and early-career developers learning enterprise application development",
+        "difficulty_level": "Intermediate",
+        "time_constraints": "1 week",
+        "prerequisites": [
+            "Basic Java programming",
+            "Understanding of object-oriented concepts",
+            "Familiarity with SQL and relational databases",
+            "Introductory knowledge of web development"
+        ],
+        "scope": [
+            "Java Programming",
+            "Spring Boot Framework",
+            "Domain-Driven Design (DDD)",
+            "Data Persistence with JPA/Hibernate",
+            "RESTful API Development",
+            "Service Layer and Repository Layer Implementation",
+            "Error Handling and Validation",
+            "Unit and Integration Testing"
+        ],
+        "feature_set": [
+            "Designing entities to model domain objects",
+            "Implementing service and repository layers",
+            "CRUD operations via REST APIs",
+            "Database schema creation and migration",
+            "Validation of input data and business rules",
+            "Exception handling and error responses",
+            "Unit and integration tests for core modules"
+        ],
+        "problem_statement_style": "scenario",
+        "projects": [
+            {
+                "project_name": "implementing_domain_logic_and_data_persistence_java_springboot",
+                "tech_domain": "Backend and Full Stack Development",
+                "tech_subdomain": "Java Spring Boot",
+                "skill": "java_springboot",
+                "tech_stack": {
+                    "language": {
+                        "name": "Java",
+                        "version": "17"
+                    },
+                    "framework": {
+                        "name": "Spring Boot",
+                        "version": "3.x"
+                    }
+                },
+                "testing": {
+                    "unit_testing": {
+                        "framework": "JUnit 5",
+                        "mocking": "Mockito",
+                        "coverage_required": "80%"
+                    },
+                    "integration_testing": {
+                        "framework": "Spring Boot Test",
+                        "database": "Testcontainers or H2 in-memory database"
+                    },
+                    "end_to_end_or_api_testing": {
+                        "framework": "RestAssured",
+                        "api_docs_validation": true
+                    }
+                },
+                "scope": {
+                    "backend": [
+                        "Spring Boot application setup",
+                        "Domain modeling and entity relationships",
+                        "Business logic in services",
+                        "Persistence layer with JPA/Hibernate"
+                    ],
+                    "api": [
+                        "REST endpoint design",
+                        "Request/response DTO mapping"
+                    ],
+                    "testing": [
+                        "Unit and integration tests",
+                        "API endpoint testing"
+                    ],
+                    "database": [
+                        "MySQL configuration",
+                        "Schema migration (Flyway/Liquibase optional)"
+                    ]
+                },
+                "prerequisites": [
+                    "Java basics",
+                    "Maven or Gradle build tools",
+                    "Understanding of RESTful services"
+                ],
+                "runtime_environment": {
+                    "Build": "Maven",
+                    "Database": "MySQL",
+                    "Host": "localhost",
+                    "Port": "3306",
+                    "Username": "testuser",
+                    "Password": "Testuser123$",
+                    "IDE": "IntelliJ IDEA or Eclipse",
+                    "OS Requirements": "Windows 10+, macOS Monterey+, Ubuntu 20.04+"
+                },
+                "learning_outcomes": [
+                    "Apply domain-driven design principles in Java",
+                    "Build a multi-layered backend application with Spring Boot",
+                    "Design and persist domain models using JPA/Hibernate",
+                    "Develop and document REST APIs",
+                    "Write unit and integration tests using industry-standard frameworks"
+                ],
+                "feature_set": [
+                    "Domain entity design",
+                    "Service and repository implementation",
+                    "RESTful endpoints for domain operations",
+                    "Validation and custom exception handling",
+                    "Testing strategy and implementation"
+                ],
+                "api_documentation": {
+                    "tool": "OpenAPI/Swagger",
+                    "endpoint": "/api/v1/**"
+                },
+                "output_resource_type": "code",
+                "dependency_type": null
+            }
+        ],
+        "acceptance_criteria": [
+            "All core CRUD REST endpoints are implemented and functional.",
+            "Domain models map cleanly to the relational schema and persist correctly.",
+            "Business logic is separated from persistence and API/controller layers.",
+            "Validation prevents invalid domain states.",
+            "Exception handling provides clear API error messages.",
+            "Automated unit and integration test coverage meets or exceeds 80%.",
+            "Solution builds and runs locally with supplied runtime environment configuration."
+        ],
+        "deliverables": [
+            "Spring Boot application codebase",
+            "Entity, repository, and service layer Java classes",
+            "REST controller endpoints",
+            "Maven project configuration",
+            "Unit and integration test suites",
+            "Example MySQL schema and seed data",
+            "OpenAPI/Swagger documentation"
+        ],
+        "need_research": "False",
+        "learning_outcomes": [
+            "Model real-world domains in Java using DDD principles",
+            "Implement persistent storage with JPA/Hibernate",
+            "Expose business logic as RESTful APIs in Spring Boot",
+            "Apply structured testing to Java full-stack projects"
+        ],
+        "learning_style": "guided",
+        "assessment_type": null,
+        "user_prompt": "Generate lab for module: Java Full Stack: Implementing Domain Logic and Data Persistence",
+        "problem_statement": "Project Problem Statement: Education Progress Tracker – Implementing Domain Logic and Data Persistence in Java Full Stack\n\nScenario-Based Format\n\nScenario\n\nYou are a Backend/Full Stack Developer at “Edutech Progress Insights”, a new edtech startup focused on providing analytics and streamlined management systems for schools, teachers, and students. The company’s mission is to empower educational institutions with robust platforms for tracking academic progress and supporting personalized education.\n\nProblem Context\n\nSchools are increasingly expected to monitor student performance, track assignment completion, and analyze academic progress. However, many institutions still use fragmented or outdated systems hampering collaboration between teachers and students. Your team has been asked to modernize this process by creating a backend service: an “Education Progress Tracker”. This system will model and persist core education domain objects (Students, Teachers, Classes, Assignments, and Submissions), enforce business logic, and provide a reliable API for integration with web or mobile frontends.\n\nObjective\n\nDesign and implement a Java Full Stack backend for an Education Progress Tracker. Your solution must capture real-world educational domain logic using DDD (Domain-Driven Design) principles, store data using JPA/Hibernate in a relational database, and expose system capabilities as REST APIs using Spring Boot. You will enforce validation and business rules, handle exceptions gracefully, and write unit/integration tests to assure reliability.\n\nLearning Outcomes\n\nOn successful completion, you will be able to:\n- Translate real-world educational entities and relationships into Java domain models using DDD patterns.\n- Design, persist and manage relational data with JPA/Hibernate.\n- Expose business logic via well-structured REST APIs using Spring Boot.\n- Apply input validation, error handling, and testing to ensure high-quality software.\n- Adhere to robust software architecture by layering service and repository logic.\n\nTarget Audience Alignment\n\nThis project targets students and early-career developers (Intermediate enterprise Java and Spring skills) learning full-stack enterprise application development. No external system integration is required; background assumptions are familiarity with Spring Boot, Java, REST APIs, JPA/Hibernate basics, and simple relational databases (e.g. H2, PostgreSQL, or MySQL).\n\nTime Constraints\n\nProject duration: 1 week, with daily milestones:\n- Day 1: Plan domain model, sketch ER diagram, setup Spring Boot/Maven project.\n- Day 2: Implement entities and repositories; define and execute DB migration scripts.\n- Day 3: Develop service layer and encapsulate business rules.\n- Day 4: Implement RESTful controllers, including CRUD endpoints.\n- Day 5: Implement data validation, complete error/exception handling.\n- Day 6: Write unit and integration tests for core modules.\n- Day 7: Final code review, documentation, and submission.\n\nProject Requirements (strictly limited to the defined feature_set and learning outcomes)\n\n1. Designing Entities to Model Domain Objects\n   - Identify and implement Java entities for Student, Teacher, Class, Assignment, and Submission.\n   - Establish relationships (e.g., Many:Many for students–classes, One:Many for class–assignments).\n   - Apply DDD principles—aggregate roots, value objects if needed.\n\n2. Implementing Service and Repository Layers\n   - Define repositories for all entities using JPA/Hibernate.\n   - Implement service classes to encapsulate business operations: assignment creation, student submissions, class enrollment logic, and grade calculations.\n   - Ensure clear separation between persistence (repository), business logic (service), and API (controller) layers.\n\n3. CRUD Operations via REST APIs\n   - Expose endpoints for all CRUD operations:\n     - Create/update/delete students, teachers, classes, assignments.\n     - Enroll students in classes.\n     - Submit/grade assignments.\n     - Retrieve lists and details of classes, assignments, and submissions.\n   - Use RESTful conventions, clear URL mapping, and sensible HTTP status codes.\n\n4. Database Schema Creation and Migration\n   - Create database schema (DDL—table creation scripts or JPA migrations).\n   - Track schema changes using Flyway or Liquibase or through JPA auto-ddl.\n   - Demonstrate an initial migration to set up all required tables and relationships.\n\n5. Validation of Input Data and Business Rules\n   - Apply input validation (e.g., unique email for student/teacher, assignment deadlines in the future).\n   - Enforce domain rules: \n     - A student can only submit assignments for enrolled classes.\n     - No duplicate enrollments.\n     - Grades must be within 0-100.\n   - Use bean validation (javax.validation) annotations and custom validators where appropriate.\n\n6. Exception Handling and Error Responses\n   - Implement global exception handling using @ControllerAdvice.\n   - Return structured error responses for validation and business logic errors.\n   - Log errors for troubleshooting.\n\n7. Unit and Integration Tests for Core Modules\n   - Write unit tests for services (JUnit, Mockito).\n   - Create integration tests for repositories and REST endpoints (SpringBootTest, MockMvc).\n   - Include scenarios: CRUD ops, failed enrollments, invalid submissions, business rule violations.\n\nExplicit Deliverables\n\n- Java codebase (Spring Boot, Maven/Gradle).\n- Complete set of Java entities, repositories, service classes, and controllers.\n- Database schema/migration scripts.\n- Sample data initialization file (optional, for demo/testing).\n- Unit and integration test suites.\n- API documentation (Swagger/OpenAPI preferred).\n- Brief ER diagram and class diagrams (can be hand-drawn or textual).\n\nMilestone Breakdown\n\nDay 1: \n- Draw ER and class diagrams.\n- Set up project structure (Maven/Gradle, Spring Boot).\n\nDay 2:\n- Implement entities and corresponding JPA repositories.\n- Set up and run DB schema migration.\n\nDay 3:\n- Build service layer.\n- Embed business logic/rules in services.\n\nDay 4:\n- Implement and test REST controllers.\n- Ensure CRUD and enrollment flows are exposed and working.\n\nDay 5:\n- Add comprehensive validations and error/exception handling.\n- Test with invalid data/flow scenarios.\n\nDay 6:\n- Write unit tests for service and repository layers.\n- Implement integration tests for key REST API functions.\n\nDay 7:\n- Finalize documentation, run end-to-end tests, clean code.\n- Submit codebase and documentation.\n\nSuccess Criteria\n\n- Accurate domain modeling and correct relationship mapping.\n- Complete, working CRUD APIs with all business rules enforced.\n- Robust validation and structured, informative error responses.\n- Well-documented codebase with runnable tests demonstrating reliability.\n- Adherence to Java Full Stack/backend best practices—no extraneous frameworks, no frontend implementation.\n\nBy focusing on modeling, persistence, domain logic, REST APIs, validation, error handling, and core testing, you will develop both practical and architectural skills essential to enterprise Java full-stack development in the education sector.\n\nEnd of Problem Statement."
+    }
+}

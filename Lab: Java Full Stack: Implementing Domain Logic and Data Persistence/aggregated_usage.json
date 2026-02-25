@@ -1,0 +1,59 @@
+[
+    {
+        "profile": "STUDIO",
+        "crew_llm": {
+            "config": "OPENAI_GPT_4_1",
+            "planning": "OPENAI_GPT_4_1",
+            "research": "OPENAI_GPT_4_1",
+            "solution": "OPENAI_GPT_4_1",
+            "stub_code": "OPENAI_GPT_4_1",
+            "test_case": "OPENAI_GPT_4_1",
+            "partial_code": "OPENAI_GPT_4_1",
+            "solution_review": "OPENAI_GPT_4_1",
+            "problem_statement": "OPENAI_GPT_4_1",
+            "research_with_tool": "OPENAI_GPT_4_1",
+            "modules_and_activities": "OPENAI_GPT_4_1"
+        },
+        "api_keys": {
+            "ANTHROPIC_API_KEY": "**********X_wAA",
+            "PERPLEXITYAI_API_KEY": "**********qOmmW",
+            "GEMINI_API_KEY": "**********_fj1s",
+            "OPENAI_API_KEY": "**********0DhoA"
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "planning_crew",
+        "usage_metrics": {
+            "total_tokens": 5442,
+            "prompt_tokens": 4305,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1137,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "problem_statement_crew",
+        "usage_metrics": {
+            "total_tokens": 3510,
+            "prompt_tokens": 2112,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1398,
+            "successful_requests": 1
+        }
+    },
+    {
+        "execution_id": "090dd091-15c1-4404-a538-1b03b47a72a7",
+        "project_name": "Lab: Java Full Stack: Implementing Domain Logic and Data Persistence",
+        "created_by": "rocky",
+        "created_on": "2026-02-25T18:18:44.735369",
+        "modified_by": "rocky",
+        "modified_on": "2026-02-25T18:19:33.237764",
+        "owner": "Nuvepro",
+        "prompt": "Generate lab for module: Java Full Stack: Implementing Domain Logic and Data Persistence"
+    },
+    {
+        "Application_duration": 0.82
+    }
+]
