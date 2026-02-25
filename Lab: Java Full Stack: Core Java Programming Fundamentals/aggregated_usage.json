@@ -1,0 +1,59 @@
+[
+    {
+        "profile": "STUDIO",
+        "crew_llm": {
+            "config": "OPENAI_GPT_4_1",
+            "planning": "OPENAI_GPT_4_1",
+            "research": "OPENAI_GPT_4_1",
+            "solution": "OPENAI_GPT_4_1",
+            "stub_code": "OPENAI_GPT_4_1",
+            "test_case": "OPENAI_GPT_4_1",
+            "partial_code": "OPENAI_GPT_4_1",
+            "solution_review": "OPENAI_GPT_4_1",
+            "problem_statement": "OPENAI_GPT_4_1",
+            "research_with_tool": "OPENAI_GPT_4_1",
+            "modules_and_activities": "OPENAI_GPT_4_1"
+        },
+        "api_keys": {
+            "ANTHROPIC_API_KEY": "**********X_wAA",
+            "PERPLEXITYAI_API_KEY": "**********qOmmW",
+            "GEMINI_API_KEY": "**********_fj1s",
+            "OPENAI_API_KEY": "**********0DhoA"
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "planning_crew",
+        "usage_metrics": {
+            "total_tokens": 5296,
+            "prompt_tokens": 4302,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 994,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "problem_statement_crew",
+        "usage_metrics": {
+            "total_tokens": 3515,
+            "prompt_tokens": 2119,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1396,
+            "successful_requests": 1
+        }
+    },
+    {
+        "execution_id": "28521a04-9ffa-4b6c-a807-7c8c3cc6f3b8",
+        "project_name": "Lab: Java Full Stack: Core Java Programming Fundamentals",
+        "created_by": "rocky",
+        "created_on": "2026-02-25T18:09:50.497864",
+        "modified_by": "rocky",
+        "modified_on": "2026-02-25T18:10:36.957784",
+        "owner": "Nuvepro",
+        "prompt": "Generate lab for module: Java Full Stack: Core Java Programming Fundamentals"
+    },
+    {
+        "Application_duration": 0.79
+    }
+]

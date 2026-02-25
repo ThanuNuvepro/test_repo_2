@@ -1,0 +1,139 @@
+{
+    "id": "28521a04-9ffa-4b6c-a807-7c8c3cc6f3b8",
+    "name": "Lab: Java Full Stack: Core Java Programming Fundamentals",
+    "description": "Detailed specification for generating a Project using Generative AI",
+    "schema": "2.0",
+    "owner": "Nuvepro",
+    "created_by": "rocky",
+    "created_on": "2026-02-25T18:09:50.497864",
+    "modified_by": "rocky",
+    "modified_on": "2026-02-25T18:10:36.957784",
+    "published_on": "",
+    "category": "",
+    "version": "Lab: Java Full Stack: Core Java Programming Fundamentals",
+    "locale": "en_US",
+    "plan_spec": {
+        "tech_domain": "Backend & Core Programming",
+        "tech_subdomain": "Core Java",
+        "application_domain": "Education",
+        "application_subdomain": "java_full_stack_core_java_fundamentals_lab",
+        "target_audience": "Beginner to Intermediate Java learners, aspiring Java full-stack developers, programming students",
+        "difficulty_level": "Beginner",
+        "time_constraints": "4-6 hours for primary module lab",
+        "prerequisites": [
+            "Basic understanding of computer systems",
+            "Familiarity with using an IDE",
+            "No prior Java experience required, but general programming logic is helpful"
+        ],
+        "scope": [
+            "Java language syntax and structure",
+            "Variables, data types, and operators",
+            "Control statements (if-else, switch, loops)",
+            "Functions and methods",
+            "Object-oriented programming basics (classes, objects, inheritance, polymorphism, encapsulation)",
+            "Exception handling",
+            "Basic I/O operations",
+            "Arrays and collections (introductory)",
+            "Simple command-line applications"
+        ],
+        "feature_set": [
+            "Step-by-step coding labs for Java fundamentals",
+            "Hands-on exercises for syntax and program structure",
+            "Mini-project: Console-based application (calculator or student records)",
+            "Automated test cases",
+            "Solution walkthroughs and hints"
+        ],
+        "problem_statement_style": "scenario",
+        "projects": [
+            {
+                "project_name": "java_full_stack_core_java_fundamentals_lab_core_java",
+                "tech_domain": "Backend & Core Programming",
+                "tech_subdomain": "Core Java",
+                "skill": "python_core",
+                "tech_stack": {
+                    "language": {
+                        "name": "Java",
+                        "version": "17"
+                    },
+                    "framework": {
+                        "name": "None",
+                        "description": "Focus on standard Java core libraries"
+                    }
+                },
+                "testing": {
+                    "unit_testing": {
+                        "framework": "JUnit 5",
+                        "test_coverage_required": "75%",
+                        "sample_test_cases_required": true
+                    },
+                    "integration_testing": null,
+                    "end_to_end_or_api_testing": null
+                },
+                "scope": {
+                    "core_java": [
+                        "Syntax, variables, data types, operators",
+                        "Conditional and looping constructs",
+                        "Methods and parameter passing",
+                        "Classes and objects (OOP basics)",
+                        "Basic I/O",
+                        "Exception handling",
+                        "Simple array operations"
+                    ]
+                },
+                "prerequisites": [
+                    "Ability to use a text editor or IDE",
+                    "Basic logical reasoning"
+                ],
+                "runtime_environment": {
+                    "Build": "Maven 3.x",
+                    "IDE": "Eclipse or IntelliJ IDEA",
+                    "OS Requirements": "Windows 10+, macOS Monterey+, Ubuntu 20.04+"
+                },
+                "learning_outcomes": [
+                    "Write, compile, and run simple Java programs",
+                    "Understand basic object-oriented principles",
+                    "Use control structures and methods effectively",
+                    "Implement basic error handling",
+                    "Manipulate arrays and primitive data types"
+                ],
+                "feature_set": [
+                    "Hello World and program structure exercise",
+                    "Calculator using control statements",
+                    "Student Record mini-project (objects, arrays)",
+                    "Comprehensive lab documentation and guides",
+                    "Sample unit tests for validation",
+                    "Challenging bonus questions for further practice"
+                ],
+                "api_documentation": null,
+                "output_resource_type": "code",
+                "dependency_type": null
+            }
+        ],
+        "acceptance_criteria": [
+            "All exercises execute successfully with expected output",
+            "Unit tests pass with at least 75% code coverage",
+            "Student Record mini-project demonstrates classes, arrays, and OOP",
+            "Clean, commented, and readable code is submitted",
+            "Lab write-up includes completed solutions and working test cases"
+        ],
+        "deliverables": [
+            "Java source code files for all exercises",
+            "Maven build configuration (pom.xml)",
+            "JUnit 5 test suite covering exercises and mini-project",
+            "README or lab manual describing tasks and running instructions",
+            "Solution files for self-assessment"
+        ],
+        "need_research": "False",
+        "learning_outcomes": [
+            "Fundamentals of Core Java programming",
+            "Analytical thinking through coding exercises",
+            "Hands-on experience with OOP in Java",
+            "Debugging and testing Java code using JUnit",
+            "Ability to build simple command-line applications"
+        ],
+        "learning_style": "guided",
+        "assessment_type": null,
+        "user_prompt": "Generate lab for module: Java Full Stack: Core Java Programming Fundamentals",
+        "problem_statement": "Comprehensive Project Problem Statement for Core Java Fundamentals Lab in Education Domain\n\nScenario-Based Format: Education Data System Developer in a School Administration Context\n\nBackground:\nYou have recently joined as a Junior Backend Developer at “BrightLearn Academy,” an educational institution aiming to modernize its student record management process. The school currently relies on paper-based systems for storing student information, managing grades, and calculating simple analytics, which often leads to data errors and inefficiencies. Management has requested a basic, reliable, and testable command-line application that will allow school staff to manage and retrieve student records efficiently.\n\nProject Objective:\nDesign, implement, and test a console-based “Student Record Management System” in Core Java. Your application will allow users to add new student records, update and delete records, search/filter for students by name or ID, input and store grades, and calculate average scores per student. All functionalities should operate using the fundamentals of Core Java (data structures, control statements, OOP principles), incorporating robust user input handling, proper code structure, and automated test cases using JUnit.\n\nTime Constraint:\nThe project must be completed within 4-6 hours, designed for lab/classroom use. The proposed milestones are:\n- Step-by-step coding labs: 1.5 hours\n- Hands-on syntax/program structure exercises: 1 hour\n- Mini-project implementation: 2 hours\n- Automated test cases: 0.5 hour\n- Final walkthrough and hints review: 1 hour\n\nTarget Audience and Assumptions:\n- Beginner to Intermediate Java learners, aspiring Java full-stack developers, programming students.\n- Audience is familiar with basic Java syntax, command-line operations, and object-oriented concepts but has limited experience with applying Java in real-world, educational data management settings.\n- No prior experience with databases is assumed; only in-memory storage structures (arrays, ArrayLists, etc.) will be used.\n\nFeature Set:\nStrictly adhere to the following features:\n- Step-by-step coding labs for Java fundamentals: small, incremental exercises leading up to the mini-project (e.g., creating classes, manipulating arrays/ArrayLists, using control structures)\n- Hands-on exercises in syntax and program structure: tasks focusing on methods, loops, conditionals, and exception handling.\n- Mini-project: Full implementation of the Student Record Management System as a command-line Java application.\n- Automated test cases: JUnit tests to establish correctness of student data manipulation features.\n- Solution walkthroughs and hints: documented code samples and troubleshooting tips after each major milestone.\n\nProject Tasks and Instructions:\n\n1. Step-by-Step Coding Labs (1.5 Hours)\n   a. Create a simple Student class with attributes: id (int), name (String), age (int), and grades (ArrayList<Integer>).\n   b. Implement methods to add, update, and remove grades for a Student instance.\n   c. Practice using ArrayList to store multiple Student objects and access/update individual records.\n   d. Write simple input/output routines using Scanner for console interaction.\n\n2. Hands-On Syntax and Program Structure Exercises (1 Hour)\n   a. Implement control statements (if/else, switch) to handle menu options for the user.\n   b. Develop looping constructs to display student records and traverse grade lists.\n   c. Add exception handling for invalid user input (e.g., non-numeric entry for ID).\n   d. Write modular code by separating functionalities using methods (e.g., addStudent(), updateStudent(), calculateAverageGrade()).\n\n3. Mini-Project: Student Record Management System Implementation (2 Hours)\n   a. Build a menu-driven console application that allows:\n      - Adding new student records (with validation for unique ID)\n      - Updating existing student records (name, age, grades)\n      - Searching for students by ID or name (partial and complete matches)\n      - Listing all students or specific subsets (e.g., those above/below a certain average grade)\n      - Calculating and displaying the average grade for a given student\n      - Deleting a student record\n   b. Ensure all data is handled in-memory (use ArrayList or similar structure). No file or database operations.\n   c. Each operation must prompt for relevant user input, perform the requested action, handle errors gracefully, and display the results in a clear format.\n   d. Adhere strictly to Java best practices for class design (encapsulation, constructors, access modifiers).\n\n4. Automated Test Cases (0.5 Hour)\n   a. Write JUnit test cases for:\n      - Adding, updating, and deleting students in the record system\n      - Adding and calculating average grades\n      - Searching for students by ID and name\n   b. Ensure that all main functionalities can be tested independently of the UI layer (console prompts).\n\n5. Solution Walkthroughs and Hints (1 Hour)\n   a. Provide code walkthroughs for each main class and method: Student, RecordManager, main application loop.\n   b. Offer incremental hints for common pitfalls, such as input validation, array versus ArrayList differences, and handling empty or missing data.\n   c. Include troubleshooting tips for test failures (e.g., correct setup of @Test methods, ensuring methods are public and accessible to the test suite).\n\nExpected Learning Outcomes:\nBy completing this project, you will:\n- Demonstrate foundational Core Java programming abilities by implementing classes, methods, control statements, collections, and exception handling.\n- Strengthen analytical thinking through step-by-step exercises and progressive feature implementation.\n- Gain hands-on experience with object-oriented principles in Java, such as encapsulation and class design, as applied to a real-world educational records scenario.\n- Master basic debugging and testing skills using JUnit to validate your application's key features.\n- Build practical experience developing and troubleshooting a simple but complete command-line application, directly translatable to educational and administrative contexts.\n\nAssessment and Submission:\nYour project is complete when:\n- All labs and exercises are implemented in clearly organized Java files.\n- The final Student Record Management System runs correctly and passes all automated tests.\n- A brief (one-page) reflection document accompanies the code, describing your design choices and main challenges.\n\nTools and Constraints:\n- Java Standard Edition, Java 8 or higher.\n- JUnit 4 or 5 for unit testing.\n- No external libraries or frameworks other than Java and JUnit.\n- Console (terminal) is the only user interface (no GUI code).\n\nSummary:\nThis problem statement provides a structured, real-world educational scenario where you, as an entry-level backend developer, deliver a practical Java application relevant to school data management. All steps, features, and deliverables are custom-tailored for beginner-to-intermediate Java learners and strictly aligned with the given learning outcomes and feature set.\n\nGood luck, and approach the challenge step by step—the core skills you build here form the foundation for advanced backend development in education and beyond!"
+    }
+}
