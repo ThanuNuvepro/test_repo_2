@@ -1,0 +1,81 @@
+[
+    {
+        "profile": "STUDIO",
+        "crew_llm": {
+            "config": "OPENAI_GPT_4_1",
+            "planning": "OPENAI_GPT_4_1",
+            "research": "OPENAI_GPT_4_1",
+            "solution": "OPENAI_GPT_4_1",
+            "stub_code": "OPENAI_GPT_4_1",
+            "test_case": "OPENAI_GPT_4_1",
+            "partial_code": "OPENAI_GPT_4_1",
+            "solution_review": "OPENAI_GPT_4_1",
+            "problem_statement": "OPENAI_GPT_4_1",
+            "research_with_tool": "OPENAI_GPT_4_1",
+            "modules_and_activities": "OPENAI_GPT_4_1"
+        },
+        "api_keys": {
+            "ANTHROPIC_API_KEY": "**********X_wAA",
+            "PERPLEXITYAI_API_KEY": "**********qOmmW",
+            "GEMINI_API_KEY": "**********_fj1s",
+            "OPENAI_API_KEY": "**********0DhoA"
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "planning_crew",
+        "usage_metrics": {
+            "total_tokens": 5253,
+            "prompt_tokens": 4300,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 953,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "problem_statement_crew",
+        "usage_metrics": {
+            "total_tokens": 3039,
+            "prompt_tokens": 1934,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1105,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "postgresql_essentials_and_schema_setup_postgresql",
+        "crew_name": "modules_and_activities_crew",
+        "usage_metrics": {
+            "total_tokens": 5442,
+            "prompt_tokens": 4529,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 913,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "postgresql_essentials_and_schema_setup_postgresql",
+        "crew_name": "solution_crew",
+        "usage_metrics": {
+            "total_tokens": 165581,
+            "prompt_tokens": 131909,
+            "cached_prompt_tokens": 11264,
+            "completion_tokens": 33672,
+            "successful_requests": 20
+        }
+    },
+    {
+        "execution_id": "099b4ae2-3d40-44c4-86b1-8d847a054293",
+        "project_name": "Lab: PostgreSQL Essentials and Schema Setup",
+        "created_by": "rocky",
+        "created_on": "2026-02-25T17:27:39.360508",
+        "modified_by": "rocky",
+        "modified_on": "2026-02-25T17:28:12.536392",
+        "owner": "Nuvepro",
+        "prompt": "Generate lab for module: PostgreSQL Essentials and Schema Setup"
+    },
+    {
+        "Application_duration": 4.72
+    }
+]
