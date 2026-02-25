@@ -1,0 +1,148 @@
+{
+    "id": "f07c8e19-b7c1-4f96-94ea-87cd80c2c846",
+    "name": "Lab: React Foundations: UI Components and State Handling",
+    "description": "Detailed specification for generating a Project using Generative AI",
+    "schema": "2.0",
+    "owner": "Nuvepro",
+    "created_by": "rocky",
+    "created_on": "2026-02-25T17:53:41.681220",
+    "modified_by": "rocky",
+    "modified_on": "2026-02-25T17:54:42.813450",
+    "published_on": "",
+    "category": "",
+    "version": "Lab: React Foundations: UI Components and State Handling",
+    "locale": "en_US",
+    "plan_spec": {
+        "tech_domain": "Frontend Development",
+        "tech_subdomain": "React",
+        "application_domain": "Education",
+        "application_subdomain": "react_foundations_ui_components_and_state_handling",
+        "target_audience": "Beginner frontend developers and software engineering learners",
+        "difficulty_level": "Beginner",
+        "time_constraints": "2-4 hours",
+        "prerequisites": [
+            "Basic understanding of HTML and CSS",
+            "Familiarity with JavaScript syntax",
+            "Curiosity about web development"
+        ],
+        "scope": [
+            "Introduction to React and component model",
+            "JSX syntax and best practices",
+            "Functional and Class Components",
+            "Component Props",
+            "Component State",
+            "Event handling in React",
+            "Component hierarchy and composition",
+            "Conditional rendering",
+            "List rendering and key management",
+            "Introductory use of React Hooks (useState)"
+        ],
+        "feature_set": [
+            "Interactive user interface using React components",
+            "Demonstration of component state updates",
+            "Passing props between parent and child components",
+            "Conditional and list rendering",
+            "Handling basic user input and events"
+        ],
+        "problem_statement_style": "scenario",
+        "projects": [
+            {
+                "project_name": "react_foundations_ui_components_and_state_handling_react",
+                "tech_domain": "Frontend Development",
+                "tech_subdomain": "React",
+                "skill": "javascript_react",
+                "tech_stack": {
+                    "language": {
+                        "primary": "JavaScript ES6+"
+                    },
+                    "framework": {
+                        "primary": "React",
+                        "version": "18.x"
+                    }
+                },
+                "testing": {
+                    "unit_testing": {
+                        "framework": "Jest",
+                        "react_testing_library": true
+                    },
+                    "integration_testing": null,
+                    "end_to_end_or_api_testing": {
+                        "framework": "Cypress",
+                        "configured": false
+                    }
+                },
+                "scope": {
+                    "technical": [
+                        "React component structure",
+                        "JSX transformation",
+                        "Props and state",
+                        "Event handling in React",
+                        "Rendering collections",
+                        "Component tree composition"
+                    ],
+                    "project_specific": [
+                        "Building a UI with multiple React components",
+                        "State-driven UI updates",
+                        "Parent-child prop passing",
+                        "Dynamic rendering based on user input"
+                    ]
+                },
+                "prerequisites": [
+                    "Node.js and npm installed",
+                    "Text editor (e.g., Visual Studio Code)",
+                    "Chrome or any modern browser"
+                ],
+                "runtime_environment": {
+                    "IDE": "Visual Studio Code",
+                    "OS Requirements": "Windows 10+, macOS Monterey+, Ubuntu 20.04+",
+                    "Node.js": "18.x",
+                    "npm": "8.x"
+                },
+                "learning_outcomes": [
+                    "Understand React’s declarative component model",
+                    "Construct, render, and compose functional React components",
+                    "Manage and update UI state",
+                    "Control data flow with props and state",
+                    "Handle events responsibly within a React application"
+                ],
+                "feature_set": [
+                    "Functional React component definitions",
+                    "Parent and child component interaction with props",
+                    "UI updates in response to user-driven state changes",
+                    "Conditional rendering logic",
+                    "Iterative rendering for lists/data collections"
+                ],
+                "api_documentation": null,
+                "output_resource_type": "code",
+                "dependency_type": null
+            }
+        ],
+        "acceptance_criteria": [
+            "UI is composed of at least three functional React components",
+            "State is used to track and update component data",
+            "Props are passed from parent to child components correctly",
+            "UI reflects state changes instantly in response to user input",
+            "All React components use JSX syntax",
+            "Lists are rendered dynamically using map and include working unique keys",
+            "Project passes a basic suite of unit tests (Jest + RTL)"
+        ],
+        "deliverables": [
+            "A React project scaffolded with create-react-app or Vite",
+            "Source code for components, including both presentational and container components",
+            "Sample data for list rendering scenarios",
+            "Jest/React Testing Library unit test cases",
+            "README with setup, run, and test instructions"
+        ],
+        "need_research": "False",
+        "learning_outcomes": [
+            "Ability to build and compose simple UI applications in React",
+            "Solid understanding of component-based UI architecture",
+            "Confidence in managing component data lifecycle (state and props)",
+            "Experience with essential React tooling and best practices"
+        ],
+        "learning_style": "assessment",
+        "assessment_type": "stub_code",
+        "user_prompt": "Generate lab for module: React Foundations: UI Components and State Handling",
+        "problem_statement": "Scenario-Based Project Problem Statement for Beginner Frontend Developers: React Foundations in Education\n\nProject Title: “Student Progress Tracker: An Interactive React Dashboard for Educators”\n\nScenario Description:\nYou are a junior frontend developer at EduTrack, an edtech startup focused on delivering intuitive digital solutions for teachers. Your current assignment is to design and implement a simple interactive dashboard that helps teachers monitor and manage their students' progress in class assignments. This dashboard should empower teachers to quickly view student lists, check assignment completion status, and mark assignments as completed through an engaging user interface built with React.\n\nCore Project Guidelines:\n\nReal-World Role:\nYou are acting as the frontend developer on a small team, responsible for building the foundational user interface components that teachers interact with daily. Your expertise in React will be applied to construct a real-life tool supporting classroom efficiency.\n\nProblem Context:\nModern teachers face the ongoing challenge of tracking multiple students’ assignment statuses in an ever-evolving educational landscape. Easy-to-use digital dashboards greatly reduce administrative overhead and allow teachers to focus on instructional needs. Your mission is to create a React-based solution that offers clear visibility and quick interactivity for assignment tracking, addressing genuine educator pain points.\n\nObjective:\nDevelop an interactive, stateful web dashboard using React, which:\n- Displays a list of students and their assignment completion statuses\n- Allows teachers to toggle (mark as completed/not completed) assignment statuses via the UI\n- Reflects all status changes immediately and updates the interface responsively\n- Segments the display to show students based on their completion status\n- Ensures components communicate via props, and the UI responds to user input events\n\nSpecific Requirements:\n1. User Interface: Create a visually clean, easy-to-understand dashboard listing students with assignment statuses.\n2. State Updates: Clicking an action button should update each student’s completion status using React state, instantly updating the display.\n3. Props Passing: Utilize parent and child components to manage and display student information, ensuring data and functions are passed correctly via props.\n4. Conditional Rendering & List Management: Render student rows dynamically from an array, with sections that conditionally display completed or incomplete students.\n5. Input Handling: Allow teachers to add a new student to the list via a simple form input, handling user input and dynamic list updates.\n\nLearning Outcomes Alignment:\nThis project is scoped to develop the following skills:\n- Ability to build and compose simple UI applications in React by breaking the dashboard into reusable components (e.g., StudentList, StudentRow, AddStudentForm)\n- Solid understanding of component-based UI architecture through the design and communication between parent (Dashboard) and child components\n- Confidence in managing the component data lifecycle (state and props) by tracking state in the parent, distributing data/functions via props, and updating UI upon events\n- Experience with essential React tooling and best practices, such as using functional components, hooks (useState), prop-types (if introduced), and clean code organization\n\nTarget Audience Alignment:\nThis challenge is tailored for beginner frontend developers and early-career software engineering learners who have basic HTML, CSS, and JavaScript familiarity and are new to foundational React concepts. It assumes no prior experience beyond initial exposure to React component syntax and state management. All requirements and concepts are limited to React’s core principles, without advanced tooling or external libraries.\n\nTimeline and Time Constraints:\nThe project is designed to be completed in 2–4 focused hours. A suggested breakdown:\n- 30 minutes: Setup and scaffolding React project (using Create React App or Vite)\n- 30–45 minutes: Implementing the StudentList and StudentRow components, and mapping through student data\n- 30–45 minutes: Adding state and UI updates for completion status toggling\n- 30–45 minutes: Building and integrating AddStudentForm with input handling and dynamic state updates\n- Final 30 minutes: Testing UI interactions, refactoring for clarity and commenting code\n\nStep-by-Step Technical Instructions:\n1. Initial Setup:\n   - Create a new React project.\n   - Organize your folder with dedicated files for each component.\n\n2. Student Data Representation:\n   - In the Dashboard parent component, create a stateful array to store students (e.g., [{id: 1, name: \"Aaliyah\", completed: false}]).\n   - Prepopulate with 4–6 sample students.\n\n3. List & Row Components:\n   - Build a StudentList component to render a list of StudentRow components by mapping over the student array.\n   - Pass each student’s details and a function to toggle completion as props to StudentRow.\n\n4. State Updates on Interaction:\n   - In StudentRow, display the student name and a button to toggle their assignment status.\n   - When the button is clicked, call the toggle function. Update the state in the Dashboard so React rerenders the UI, visually reflecting the change.\n\n5. Conditional & List Rendering:\n   - In Dashboard or StudentList, use conditional rendering to create two sections: “Completed” and “Incomplete” students.\n   - Only display students in the appropriate section based on current state.\n\n6. Handling Basic User Input:\n   - Implement an AddStudentForm component with an input field and an “Add Student” button.\n   - On form submission, add the new student to the Dashboard’s array state and clear the input.\n   - Ensure the new student is rendered immediately.\n\n7. Props Communication:\n   - When a student’s completion status is toggled or a new student is added, ensure all changes propagate from the Dashboard state down to relevant child components via props.\n\n8. Best Practices:\n   - Use functional components and React hooks only (no class components).\n   - Organize props and state logically, adding comments for clarity.\n   - Maintain clean, readable code aligned with React community style guides.\n\nExpected Deliverables:\n- A working React app with the described dashboard, functional UI for toggling assignment status, clear separation of components, dynamic rendering, and user-driven state changes.\n- Well-commented, clean code that a beginner can understand and build upon.\n\nAssessment:\nUpon completion, you should demonstrate:\n- Confident breakdown of UI into React components and their logical relationships\n- Accurate use of state to manage application data and trigger rerenders\n- Ability to handle basic forms and user inputs for interactive UI changes\n- Proper passing of data and functions as props between parent and child components\n- Use of conditional and list rendering patterns to organize the UI based on data\n\nBy engaging in this project, you will gain practical experience with React foundations, empowering you with the skills and confidence to tackle more complex frontend applications in the education technology domain."
+    }
+}

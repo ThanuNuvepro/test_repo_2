@@ -1,0 +1,59 @@
+[
+    {
+        "profile": "STUDIO",
+        "crew_llm": {
+            "config": "OPENAI_GPT_4_1",
+            "planning": "OPENAI_GPT_4_1",
+            "research": "OPENAI_GPT_4_1",
+            "solution": "OPENAI_GPT_4_1",
+            "stub_code": "OPENAI_GPT_4_1",
+            "test_case": "OPENAI_GPT_4_1",
+            "partial_code": "OPENAI_GPT_4_1",
+            "solution_review": "OPENAI_GPT_4_1",
+            "problem_statement": "OPENAI_GPT_4_1",
+            "research_with_tool": "OPENAI_GPT_4_1",
+            "modules_and_activities": "OPENAI_GPT_4_1"
+        },
+        "api_keys": {
+            "ANTHROPIC_API_KEY": "**********X_wAA",
+            "PERPLEXITYAI_API_KEY": "**********qOmmW",
+            "GEMINI_API_KEY": "**********_fj1s",
+            "OPENAI_API_KEY": "**********0DhoA"
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "planning_crew",
+        "usage_metrics": {
+            "total_tokens": 5315,
+            "prompt_tokens": 4302,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1013,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "problem_statement_crew",
+        "usage_metrics": {
+            "total_tokens": 3325,
+            "prompt_tokens": 1975,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1350,
+            "successful_requests": 1
+        }
+    },
+    {
+        "execution_id": "f07c8e19-b7c1-4f96-94ea-87cd80c2c846",
+        "project_name": "Lab: React Foundations: UI Components and State Handling",
+        "created_by": "rocky",
+        "created_on": "2026-02-25T17:53:41.681220",
+        "modified_by": "rocky",
+        "modified_on": "2026-02-25T17:54:42.813450",
+        "owner": "Nuvepro",
+        "prompt": "Generate lab for module: React Foundations: UI Components and State Handling"
+    },
+    {
+        "Application_duration": 1.03
+    }
+]
