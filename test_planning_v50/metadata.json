@@ -1,44 +1,44 @@
 {
-    "id": "9147b104-9c8b-46c3-8151-53daf5f7d2b6",
+    "id": "3a0006a2-443a-4d9e-a520-72545b7752a8",
     "name": "test_planning_v50",
     "description": "Detailed specification for generating a Project using Generative AI",
     "schema": "2.0",
     "owner": "Nuvepro",
     "created_by": "rocky",
-    "created_on": "2026-02-25T16:30:04.528165",
+    "created_on": "2026-02-25T16:31:02.336402",
     "modified_by": "rocky",
-    "modified_on": "2026-02-25T16:30:27.739287",
+    "modified_on": "2026-02-25T16:31:32.735934",
     "published_on": "",
     "category": "",
     "version": "test_planning_v50",
     "locale": "en_US",
     "plan_spec": {
-        "tech_domain": "Core Programming",
+        "tech_domain": "Backend Development",
         "tech_subdomain": "Python Core",
         "application_domain": "General",
-        "application_subdomain": "hello_world",
-        "target_audience": "Beginner developers learning Python",
-        "difficulty_level": "Easy",
+        "application_subdomain": "hello_world_application",
+        "target_audience": "Python beginners and educators",
+        "difficulty_level": "Beginner",
         "time_constraints": "15 minutes",
         "prerequisites": [
-            "Basic computer knowledge",
-            "Ability to install software",
-            "No prior programming experience required"
+            "Basic understanding of computers",
+            "Ability to install Python",
+            "Familiarity with the command line or terminal"
         ],
         "scope": [
-            "Introduction to Python syntax",
-            "Setting up Python environment",
-            "Writing and running a simple script",
-            "Understanding print statements"
+            "Python syntax basics",
+            "Running Python scripts",
+            "Printing to console",
+            "Script execution workflows"
         ],
         "feature_set": [
-            "Prints 'Hello, World!' to the console"
+            "Display a 'Hello, World!' message to the console"
         ],
         "problem_statement_style": "scenario",
         "projects": [
             {
-                "project_name": "hello_world_python_core",
-                "tech_domain": "Core Programming",
+                "project_name": "hello_world_application_python_core",
+                "tech_domain": "Backend Development",
                 "tech_subdomain": "Python Core",
                 "skill": "python_core",
                 "tech_stack": {
@@ -54,34 +54,34 @@
                 "testing": {
                     "unit_testing": {
                         "framework": "pytest",
-                        "test_basic_output": true
+                        "required": false
                     },
                     "integration_testing": null,
                     "end_to_end_or_api_testing": null
                 },
                 "scope": {
-                    "basic": [
-                        "Python environment setup",
-                        "Script writing basics",
-                        "Console output"
+                    "python_basics": [
+                        "Understanding the print() function",
+                        "Writing and saving Python scripts",
+                        "Executing scripts from the command line"
                     ]
                 },
                 "prerequisites": [
-                    "Computer with OS support for Python",
-                    "Basic command-line usage"
+                    "Python 3.10 or newer installed",
+                    "Access to a text editor (e.g., VS Code, Notepad++, Sublime Text)",
+                    "Terminal or command prompt access"
                 ],
                 "runtime_environment": {
-                    "OS Requirements": "Windows 10+, macOS Monterey+, Ubuntu 20.04+",
-                    "IDE": "Visual Studio Code",
-                    "Python": "3.10+"
+                    "OS Requirements": "Windows 10+, macOS Monterey+, or Ubuntu 20.04+",
+                    "IDE": "VS Code or any basic text editor"
                 },
                 "learning_outcomes": [
-                    "Ability to install Python and run scripts",
-                    "Understanding of the print function",
-                    "Confidence to write first Python program"
+                    "Learn how to write and run a basic Python script",
+                    "Develop confidence in using Python's print statement",
+                    "Understand the process of executing a script from a terminal or command prompt"
                 ],
                 "feature_set": [
-                    "Script prints 'Hello, World!'"
+                    "Output 'Hello, World!' to the console using a Python script"
                 ],
                 "api_documentation": null,
                 "output_resource_type": "code",
@@ -89,21 +89,22 @@
             }
         ],
         "acceptance_criteria": [
-            "Python script runs without errors",
-            "Console displays: Hello, World!"
+            "The application displays the message 'Hello, World!' when executed.",
+            "No errors occur during script execution.",
+            "The code is syntactically correct and runs on Python 3.10+."
         ],
         "deliverables": [
-            "A Python script file (hello_world.py)"
+            "A Python script file (hello_world.py) containing the necessary code"
         ],
         "need_research": "False",
         "learning_outcomes": [
-            "Basic Python syntax",
-            "Using print statements",
-            "Setting up and executing a Python script"
+            "Understand the structure and syntax of a basic Python script",
+            "Gain experience running code from the command line",
+            "Familiarize with outputting data to the terminal in Python"
         ],
         "learning_style": "guided",
         "assessment_type": null,
         "user_prompt": "A simple hello world application in python",
-        "problem_statement": "Project Problem Statement: “Hello, World!” Launchpad for New Python Developers\n\nScenario\n\nDescription:\nYou have just been onboarded as a Junior Python Developer at a general software development company, CodeBright Solutions. As part of your orientation, you are required to get familiarized with the company's development workflow and Python basics. Your first official task is to write, execute, and verify a Python script that outputs the classic “Hello, World!” message to the console. This task serves as an introduction to Python programming, ensuring you can use basic syntax, print statements, and run Python scripts as part of the software development process.\n\nCore Guidelines:\n\n- Real-World Role: You are a Junior Python Developer on your first day at a software company, learning the fundamentals that will be foundational for all your future projects.\n- Problem Context: Industry best practices require all incoming developers to demonstrate proficiency in fundamental programming constructs and workflow, starting with the simplest Python script—printing a message to the console. This serves both as an onboarding ritual and a basic technical check.\n- Objective: Your mission is to set up your development environment, author a minimal but correct Python script that prints “Hello, World!” to the console, and execute it, demonstrating your understanding of Python core concepts.\n- Learning Outcomes: Completing this project target the following skill areas:\n    - Understand and apply Basic Python Syntax.\n    - Use the print statement to send output to the console.\n    - Set up (create and save) and execute a Python script using your chosen IDE or the command line.\n- Target Audience Alignment: This task is explicitly designed for beginner developers learning Python. It assumes no prior programming experience beyond basic computer literacy and is paced for Easy-level onboarding. All instructions avoid technical jargon and presume no pre-existing Python setup.\n- Time Constraints: This project is designed for completion in no more than 15 minutes, split explicitly into setup, coding, and testing milestones.\n\nProject Task Breakdown\n\nStep 1: Setting Up Your Development Environment (Estimated time: 5 minutes)\n- Download and install Python (version 3.x recommended) if it’s not already available on your machine.\n- Choose an editor/IDE you are comfortable with (e.g., IDLE, VS Code, PyCharm, or even Notepad).\n- Open your chosen editor and create a new file. Save the file as hello_world.py in a dedicated folder.\n\nStep 2: Writing the Python Script (Estimated time: 3 minutes)\n- In your new file, use the correct Python syntax to print a message to the console. The script must contain only one output statement displaying exactly:\n  Hello, World!\n- Example code:\n  ```python\n  print(\"Hello, World!\")\n  ```\n\nStep 3: Executing and Verifying the Script (Estimated time: 4 minutes)\n- Open your command line or terminal.\n- Navigate to the folder where you saved hello_world.py.\n- Execute the script with the command:\n  python hello_world.py\n- Confirm that the only output displayed in your console is:\n  Hello, World!\n\nStep 4: Reflection and Submission (Estimated time: 3 minutes)\n- Double-check your code for errors in syntax or casing.\n- Ensure your output matches the expected result precisely.\n- Prepare a brief note (1-2 sentences) summarizing what you did and submit both your hello_world.py file and your note to your onboarding reviewer or supervisor for feedback.\n\nProject Criteria & Relevance\n\n- The script must use proper Python Basic Syntax (such as correct indentation and case sensitivity).\n- You must use a print statement as defined in Python Core.\n- The file must be an executable Python script, set up, saved, and run from your local environment (not within a Python interpreter or notebook).\n- All instructions and output must adhere strictly to the boundaries of printing “Hello, World!”; no additional logic, text, or features are to be included.\n\nWhy This Matters\n\nThis project is foundational to your journey as a Python developer. Printing “Hello, World!”:\n- Confirms your ability to use Python’s basic syntax\n- Divides the workflow into writing, saving, and running code—essential practices for any developer\n- Introduces you to the process followed in nearly every industry setting before you move on to more complex tasks\n\nBy following the above steps, you have demonstrated initial competency in:\n- Basic Python syntax\n- Using the print statement\n- Setting up and successfully executing a Python script\n\nMake this your launching pad for mastering Python Core and stepping into more advanced programming challenges at CodeBright Solutions—and beyond!"
+        "problem_statement": "### Problem Statement for Backend Development (Python Core): “Hello, World!” Console Application\n\n---\n\n#### Scenario-Based: Real-World Role and Challenge\n\n**Role:**  \nYou have just been onboarded as a Backend Developer at a newly established tech startup, TechLaunch Solutions, which is dedicated to building modern, scalable backend systems for a range of clients. Your first assignment is a critical one: every developer at TechLaunch must demonstrate their understanding of foundational backend development concepts before moving on to more complex backend systems and services.\n\n**Problem Context:**  \nAs part of the company's best practices for onboarding, each new backend developer is required to implement a basic but essential backend application—the classic “Hello, World!” application. This application will serve as your gateway to ensuring your development environment is correctly set up, and that you fully understand the essential structure and workflow of Python programs run from the command line. This step mimics real-world processes that ensure technical consistency and readiness before contributing to production systems.\n\n**Objective:**  \nYour goal is to write a Python script that, when executed from the command line, displays the message “Hello, World!” to the terminal. This script will help you and your team standardize the initial setup process, verify that Python is correctly installed, and reinforce the coding standards for all backend development activities at TechLaunch. The skills you acquire here will be directly transferable as you progress to more advanced backend logic and data processing tasks.\n\n---\n\n#### Learning Outcomes\n\nBy completing this project, you will:\n\n- **Understand the structure and syntax of a basic Python script**: Learn how Python scripts are structured at a fundamental level, including file naming, content, and syntax requirements.\n- **Gain experience running code from the command line**: Execute your Python script using terminal or command prompt tools, simulating everyday backend developer workflows.\n- **Familiarize with outputting data to the terminal in Python**: Practice utilizing Python’s built-in output functions to communicate results or status to end users, an essential part of developing any user- or system-oriented backend function.\n\n---\n\n#### Target Audience Alignment\n\nThis project is tailored for Python beginners—new developers who may have limited exposure to programming concepts or educators guiding first-time coders. It does not assume prior professional experience, only a willingness to learn and basic computer literacy. All instructions and context will be presented in clear, accessible language with zero requirement for advanced programming concepts.\n\n---\n\n#### Time Constraints\n\nThis project is designed to be completed within **15 minutes**, making it a perfect exercise for classroom instruction or self-directed onboarding. The timeline ensures focused engagement:\n\n- 2 minutes: Read and understand the problem statement.\n- 5 minutes: Write the Python script.\n- 5 minutes: Save and execute the script from the command line.\n- 3 minutes: Reflect on what you learned.\n\n---\n\n#### Project Task Breakdown\n\n1. **Write the Script (5 minutes)**\n    - Open a plain text editor of your choice (such as VSCode, Atom, Sublime Text, or even Notepad).\n    - Create a new file and save it as `hello_world.py`.\n    - In this file, write the necessary Python code to display the exact message: `Hello, World!` to the terminal.\n\n2. **Understand Script Structure and Syntax**\n    - Ensure your code adheres to Python syntax: statements should be properly written with attention to case-sensitivity and indentation.\n    - Example structure (not the exact answer, but for guidance): Use the `print()` function to output your message.\n\n3. **Run Your Script from the Command Line (5 minutes)**\n    - Open your computer’s terminal (Command Prompt on Windows, Terminal on macOS/Linux).\n    - Navigate to the directory where you saved `hello_world.py`.\n    - Execute the script using the command:  \n      ```\n      python hello_world.py\n      ```\n    - Confirm that the output is exactly:  \n      ```\n      Hello, World!\n      ```\n\n4. **Reflect on the Task (3 minutes)**\n    - Consider what the script does, why it is structured as it is, and what steps were necessary to run it from the command line.\n    - If working in a team or classroom, discuss with peers or your instructor how this sets a strong foundation for future backend projects.\n\n---\n\n#### Team-Based Adaptation (If Working as a Group)\n\n- **Roles**: Pair up so that one person writes the script, while the other acts as a “reviewer,” checking for accuracy and adherence to the guidelines. Switch roles if time allows.\n- **Collaboration**: Both members should practice running the script and verbalizing how the structure leads to the output.\n- **Objective**: Submit your finished script to your instructor or team lead, demonstrating collaborative completion and understanding of the task.\n\n---\n\n#### Feature Set Adherence\n\nThe sole focus of this task is to:\n- **Display a 'Hello, World!' message to the console**\n\nNo additional features or extraneous functionality should be added, ensuring strict alignment with foundational backend development skills.\n\n---\n\n#### Summary: Why This Is Important\n\nBy completing this simple yet industry-standard onboarding task, you are setting yourself up for success in all future backend development. You will acquire confidence with basic Python syntax, master executing scripts in a backend workflow, and establish best practices for interacting with users or other systems via command-line interfaces.\n\n---\n\n**Begin now by opening your editor, and build the fundamental “Hello, World!”—your first step as a backend developer at TechLaunch Solutions!**"
     }
 }
