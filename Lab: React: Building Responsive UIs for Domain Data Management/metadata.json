@@ -1,0 +1,156 @@
+{
+    "id": "c4554f3c-03f6-448c-aa36-4e5350460f28",
+    "name": "Lab: React: Building Responsive UIs for Domain Data Management",
+    "description": "Detailed specification for generating a Project using Generative AI",
+    "schema": "2.0",
+    "owner": "Nuvepro",
+    "created_by": "rocky",
+    "created_on": "2026-02-26T03:54:51.731780",
+    "modified_by": "rocky",
+    "modified_on": "2026-02-26T03:55:29.335168",
+    "published_on": "",
+    "category": "",
+    "version": "Lab: React: Building Responsive UIs for Domain Data Management",
+    "locale": "en_US",
+    "plan_spec": {
+        "tech_domain": "Frontend Development",
+        "tech_subdomain": "React",
+        "application_domain": "Domain Data Management",
+        "application_subdomain": "responsive_ui",
+        "target_audience": "Intermediate frontend developers with an interest in building responsive user interfaces for data management applications.",
+        "difficulty_level": "Intermediate",
+        "time_constraints": "4-6 hours",
+        "prerequisites": [
+            "Basic understanding of JavaScript",
+            "Familiarity with HTML & CSS",
+            "Prior experience with React fundamentals",
+            "Knowledge of REST APIs and asynchronous data fetching"
+        ],
+        "scope": [
+            "React fundamentals",
+            "Component-based architecture",
+            "Responsive and adaptive design principles",
+            "State management (Hooks, Context)",
+            "Integration with RESTful APIs",
+            "Form handling and validation",
+            "Domain-specific UI patterns for data management",
+            "Accessibility and usability considerations"
+        ],
+        "feature_set": [
+            "Responsive layout adapts to desktop, tablet, and mobile",
+            "Domain data listing, searching, and filtering",
+            "CRUD (Create, Read, Update, Delete) operations via UI",
+            "Form dialogs and input validation",
+            "Interactive tables or cards for data visualization",
+            "API integration for domain data",
+            "User-friendly error states and loading indicators"
+        ],
+        "problem_statement_style": "scenario",
+        "projects": [
+            {
+                "project_name": "responsive_ui_react",
+                "tech_domain": "Frontend Development",
+                "tech_subdomain": "React",
+                "skill": "javascript_react",
+                "tech_stack": {
+                    "language": {
+                        "name": "JavaScript",
+                        "version": "ES6+"
+                    },
+                    "framework": {
+                        "name": "React",
+                        "version": "18.x"
+                    }
+                },
+                "testing": {
+                    "unit_testing": {
+                        "framework": "Jest",
+                        "react_testing_library": true
+                    },
+                    "integration_testing": {
+                        "framework": "Jest",
+                        "react_testing_library": true
+                    },
+                    "end_to_end_or_api_testing": {
+                        "framework": "Cypress",
+                        "headless": true
+                    }
+                },
+                "scope": {
+                    "React Concepts": [
+                        "Functional components",
+                        "React Hooks (useState, useEffect, useContext)",
+                        "Component reusability and composability"
+                    ],
+                    "Responsive Design": [
+                        "Media queries",
+                        "CSS-in-JS/Styled Components or CSS Modules",
+                        "Flexbox and Grid usage"
+                    ],
+                    "Data Handling": [
+                        "Fetching data from REST APIs",
+                        "Handling loading and error states",
+                        "Implementing CRUD UI patterns"
+                    ],
+                    "UI/UX Enhancements": [
+                        "Accessibility (ARIA attributes, keyboard navigation)",
+                        "User feedback for actions (toasts, modals, spinners)"
+                    ]
+                },
+                "prerequisites": [
+                    "Node.js and npm/yarn installed",
+                    "Basic command-line proficiency",
+                    "Editor/IDE such as Visual Studio Code"
+                ],
+                "runtime_environment": {
+                    "Build": "npm (v9+) or yarn (v1.22+)",
+                    "IDE": "Visual Studio Code",
+                    "OS Requirements": "Windows 10+, macOS Monterey+, Ubuntu 20.04+"
+                },
+                "learning_outcomes": [
+                    "Build scalable, responsive UIs with React for domain data management scenarios.",
+                    "Apply responsive design principles to ensure application usability across devices.",
+                    "Handle real-world data with robust CRUD operations and clean user experience.",
+                    "Integrate React apps with external REST APIs for dynamic data loading and management.",
+                    "Implement best practices for state management and code modularity in React."
+                ],
+                "feature_set": [
+                    "Mobile-first responsive layouts",
+                    "Dynamic data fetching and rendering",
+                    "Modular, reusable component system",
+                    "Form handling with validation",
+                    "Interactive UI: sorting, filtering, and paginated data display",
+                    "Seamless API CRUD integration"
+                ],
+                "api_documentation": null,
+                "output_resource_type": "code",
+                "dependency_type": "api_endpoints"
+            }
+        ],
+        "acceptance_criteria": [
+            "UI adapts seamlessly across major device widths (mobile, tablet, desktop).",
+            "All CRUD operations are interactive and provide immediate user feedback.",
+            "Domain data is fetched from mock API endpoints; loading and error states are clearly handled.",
+            "Form dialogs validate input and prevent invalid submissions.",
+            "Component code is modular and leverages React best practices for maintainability.",
+            "Unit and integration tests verify critical UI logic and workflows."
+        ],
+        "deliverables": [
+            "Responsive React UI project scaffold (preferably using Create React App or Vite).",
+            "Reusable modular components with clear folder structure.",
+            "Implementation of CRUD functionality against API endpoints.",
+            "Comprehensive unit and integration testing suite.",
+            "Documentation/readme with setup and usage instructions."
+        ],
+        "need_research": "False",
+        "learning_outcomes": [
+            "Master creation of responsive UIs using React for domain data management.",
+            "Understand and apply state management and data fetching in modern frontend apps.",
+            "Solve common UI/UX problems with reusable, accessible React components."
+        ],
+        "learning_style": "guided",
+        "assessment_type": null,
+        "user_prompt": "Generate lab for module: React: Building Responsive UIs for Domain Data Management",
+        "problem_statement": "Problem Statement – Scenario-Driven: Domain Data Management Responsive UI with React\n\nYou are a Frontend Developer at \"DataCorp Solutions\", a company specializing in data management tools for medium-sized businesses. You have recently joined the product team tasked with revamping the Domain Management Dashboard, a web-based platform that allows clients to manage their company’s various domain data (e.g., registered web domains or internal business domains). Feedback from users highlights three major needs: a seamless experience on all devices, robust data management capabilities (including CRUD), and high usability regardless of network speed or device.\n\nProject Objective:\nDesign and implement a responsive, React-based Domain Management Dashboard that enables users to easily view, search, filter, and manage domain data. The dashboard must provide a stellar experience across desktop, tablet, and mobile devices, empower users with intuitively designed CRUD operations, and handle real-time interactions with a remote API. Clear feedback — including loading states and error handling — must be present throughout the UI.\n\nIndustry Context:\nModern business workflows require real-time access and modification of domain records, often from the field or in meetings, via tablets and phones. Users expect enterprise-grade UIs: responsive layouts, interactive data visualizations (e.g., lists/tables or cards), modal dialogs for data input, input validation, useful feedback on actions (like errors or successes), and performant API-backed data flows.\n\nProject Requirements — Core Feature Delivery\n\nWithin 4-6 hours, you are to:\n\n1. Responsive Multi-Device Layout\n   - Implement a layout that adapts for desktop, tablet, and mobile. Use common breakpoints and responsive CSS/React strategies (e.g., CSS flexbox/grid, styled-components, or libraries like Material UI). The app must be fully functional and visually optimized on all target device sizes.\n\n2. Domain Data Listing, Searching, and Filtering\n   - Display all current domain records in a data-rich, interactive table or card layout.\n   - Implement real-time search and filter functions to help users locate specific domains efficiently.\n   - Ensure that these data views update instantly upon CRUD actions or in response to filter/search operations.\n\n3. CRUD Operations via UI\n   - Allow users to create new domain records, view individual details, update existing records, and delete unwanted entries.\n   - All actions must integrate with a REST API (either a mock service, like json-server, or a provided backend endpoint).\n   - The UI must optimistically reflect changes or revert them on failure, clearly indicating operation status via visual cues.\n\n4. Form Dialogs & Input Validation\n   - Use modal dialogs or slide-in panels for creating and editing domain records.\n   - Implement robust, real-time input validation (e.g., required fields, unique domain names, correct data formats). Provide immediate, accessible feedback on form errors to prevent invalid submissions.\n\n5. Data Visualization (Interactive Tables/Cards)\n   - Employ interactive tables or card-based layouts to showcase domain data. Columns or cards must allow basic sorting (e.g., by creation date or domain name).\n   - Use visual cues to highlight important statuses, like expiring domains or recently modified records.\n\n6. API Integration for Domain Data\n   - Build out frontend data fetching, updating, and error-handling logic, using React hooks and context or a simple state management solution (e.g., Redux Toolkit or React Context API) as appropriate.\n   - Demonstrate good practices in API data fetching (e.g., loading states, cancellation, minimal re-renders).\n\n7. User-Friendly Error States & Loading Indicators\n   - Clearly communicate all app states: show loading spinners, skeletons, or progress bars during data retrieval/CRUD operations.\n   - Display actionable, user-friendly error states for failed API requests or invalid user input, including advice for resolving issues (like retry or contact support).\n\nAssumptions About Your Background & Project Scope:\n- You are an intermediate React developer familiar with hooks, component abstraction, and common HTTP libraries (like axios or fetch).\n- You are practiced in basic state and effect management, simple component composition, and responsive CSS approaches.\n- The project will use mock data or a supplied API endpoint: no backend engineering is required.\n- Documentation, advanced theming/customization, and authentication are out of scope. Focus only on what’s specified above.\n\nLearning Outcomes:\nBy completing this project, you will:\n- Master the creation of responsive UIs for domain data management using React, demonstrating the ability to build layouts that are adaptive and accessible on any device.\n- Deepen your skills in state management and API data flows in modern frontend apps, showing capability in managing local and remote state efficiently and transparently.\n- Solve common UI/UX problems using reusable, accessible React components, including error presentation, modals, and interactive tables/cards for data-centric applications.\n\nTimeline Guidance (Total: 4-6 Hours):\n\n- Hour 1: Scaffold the React app. Set up routing (if needed), layout structure, and demo data-fetching layer.\n- Hour 2: Develop the responsive layout and base navigation. Ensure main page(s) look good across device widths.\n- Hour 3: Build domain listing (table/card), search/filter, and connect to data source for real/fake API.\n- Hour 4: Implement CRUD actions, including modal dialogs or edit forms, and wire up input validation.\n- Hour 5: Integrate error handling, loading indicators, and polish UX for all user flows.\n- Hour 6: Final review; ensure all requirements are met, code is organized, and the UI/UX is cohesive across mobile/tablet/desktop.\n\nDeliverables:\n- A working, responsive React application for comprehensive domain data management as described.\n- All must-have features implemented as outlined.\n- Codebase and documentation (as comments or README) clear enough for a peer to understand the app’s structure and flow.\n\nBy completing this project, you’ll deliver a portfolio-ready, intermediate-level data management dashboard for real-world use—demonstrating mastery of responsive React UIs and best-practice frontend workflows for interactive, data-centric applications."
+    }
+}
