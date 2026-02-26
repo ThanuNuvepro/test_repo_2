@@ -1,0 +1,150 @@
+{
+    "id": "24982a13-09f4-438d-aa2a-fbf50be1041e",
+    "name": "Lab: Getting Started with NumPy: Arrays and Operations",
+    "description": "Detailed specification for generating a Project using Generative AI",
+    "schema": "2.0",
+    "owner": "Nuvepro",
+    "created_by": "rocky",
+    "created_on": "2026-02-26T16:00:43.062349",
+    "modified_by": "rocky",
+    "modified_on": "2026-02-26T16:02:08.563176",
+    "published_on": "",
+    "category": "",
+    "version": "Lab: Getting Started with NumPy: Arrays and Operations",
+    "locale": "en_US",
+    "plan_spec": {
+        "tech_domain": "Data Science",
+        "tech_subdomain": "NumPy",
+        "application_domain": "education",
+        "application_subdomain": "numpy_arrays_and_operations",
+        "target_audience": "beginners in data science and Python programming",
+        "difficulty_level": "beginner",
+        "time_constraints": "2 hours",
+        "prerequisites": [
+            "Basic understanding of Python syntax",
+            "Familiarity with Python lists and basic data structures",
+            "Ability to run Jupyter Notebooks or Python scripts"
+        ],
+        "scope": [
+            "Introduction to NumPy",
+            "NumPy array creation",
+            "Array data types",
+            "Basic array operations (arithmetic, aggregation)",
+            "Indexing and slicing arrays",
+            "Reshaping arrays",
+            "Broadcasting in NumPy",
+            "Practical exercises"
+        ],
+        "feature_set": [
+            "Hands-on lab environment (Jupyter Notebook)",
+            "Step-by-step instructions for each topic",
+            "Self-contained examples for array manipulations",
+            "Exercises and practice problems",
+            "Automatic answer checking for selected exercises",
+            "Documentation and explanations inline"
+        ],
+        "problem_statement_style": "scenario",
+        "projects": [
+            {
+                "project_name": "numpy_arrays_and_operations_numpy",
+                "tech_domain": "Data Science",
+                "tech_subdomain": "NumPy",
+                "skill": "python_data_and_ai",
+                "tech_stack": {
+                    "language": {
+                        "name": "Python",
+                        "version": "3.10+"
+                    },
+                    "framework": {
+                        "name": "Jupyter Notebook",
+                        "purpose": "Interactive coding and documentation"
+                    }
+                },
+                "testing": {
+                    "unit_testing": {
+                        "framework": "pytest",
+                        "enabled": false
+                    },
+                    "integration_testing": null,
+                    "end_to_end_or_api_testing": null
+                },
+                "scope": {
+                    "NumPy Fundamentals": [
+                        "Importing and setting up NumPy",
+                        "Understanding array objects and attributes (shape, dtype)"
+                    ],
+                    "Array Creation": [
+                        "Creating arrays from Python lists",
+                        "Generating arrays (arange, linspace, zeros, ones, eye)"
+                    ],
+                    "Array Operations": [
+                        "Element-wise arithmetic",
+                        "Aggregation (sum, mean, min, max)",
+                        "Comparison and Boolean arrays"
+                    ],
+                    "Indexing and Slicing": [
+                        "1D and 2D indexing",
+                        "Slicing and views",
+                        "Fancy and boolean indexing"
+                    ],
+                    "Reshaping and Broadcasting": [
+                        "Shape manipulation",
+                        "Broadcasting rules",
+                        "Practical reshaping (reshape, ravel, flatten)"
+                    ],
+                    "Practice/Exercises": [
+                        "Hands-on exercises for array operations",
+                        "Short quizzes and self-checks"
+                    ]
+                },
+                "prerequisites": [
+                    "Basic Python programming",
+                    "Familiarity with running notebooks"
+                ],
+                "runtime_environment": {
+                    "IDE": "Jupyter Notebook or VS Code with Python extension",
+                    "OS Requirements": "Windows 10+, macOS Monterey+, Ubuntu 20.04+"
+                },
+                "learning_outcomes": [
+                    "Understand the purpose and benefits of using NumPy arrays",
+                    "Create, manipulate, and operate on NumPy arrays",
+                    "Perform basic mathematical and logical operations on arrays",
+                    "Effectively index, slice, and reshape arrays for data analysis tasks",
+                    "Apply broadcasting rules to optimize array operations"
+                ],
+                "feature_set": [
+                    "Jupyter Notebook-based guided lab",
+                    "In-notebook explanations and code samples",
+                    "Exercises for independent practice",
+                    "Sectional checkpoints or quizzes",
+                    "Solutions and hints provided for key exercises"
+                ],
+                "api_documentation": null,
+                "output_resource_type": "code",
+                "dependency_type": null
+            }
+        ],
+        "acceptance_criteria": [
+            "Lab covers all key NumPy topics: array creation, operations, reshaping, broadcasting",
+            "Hands-on exercises are present and solutions are available",
+            "All code cells in the notebook run without errors",
+            "Instructions are clear, comprehensive, and beginner-friendly",
+            "Learning outcomes are supported by the notebook structure"
+        ],
+        "deliverables": [
+            "A Jupyter Notebook containing instructional content, code examples, and exercises",
+            "Solution cells (hidden or separate) for all exercises",
+            "README with setup instructions for the lab"
+        ],
+        "need_research": "False",
+        "learning_outcomes": [
+            "Ability to create and manipulate NumPy arrays",
+            "Understanding of broadcasting and advanced indexing",
+            "Confidence in using NumPy for basic data analysis"
+        ],
+        "learning_style": "guided",
+        "assessment_type": null,
+        "user_prompt": "Generate lab for module: Getting Started with NumPy: Arrays and Operations",
+        "problem_statement": "Problem Statement: Enhancing School Attendance Analysis Using NumPy Arrays\n\nScenario (Real-World Role-Based Project for Education Context):\n\nYou are a Junior Data Analyst working for a district education board. The district has been tasked with improving student attendance tracking across several schools. Consistent attendance is a major indicator of student engagement and educational outcomes. Currently, data is collected daily across schools in CSV files and needs to be processed and analyzed to spot trends, identify anomalies, and generate actionable insights for school administrators.\n\nYour project is to build, document, and test a set of Jupyter Notebook-based tools using NumPy arrays for efficient data manipulation—and to support the district’s ongoing commitment to data-driven improvement.\n\nObjective:\n\nDevelop an interactive Jupyter Notebook that guides users step-by-step through key NumPy array operations relevant to analyzing school attendance data. You will demonstrate the collection, cleaning, analysis, and basic reporting of attendance data from multiple schools and grades over a month using only NumPy arrays. By the end of the lab, you should deliver self-contained, executable examples, inline documentation, and automatically checked exercises that give beginners confidence in core NumPy skills and data analysis.\n\nProject Details & Instructions:\n\nTarget Audience & Assumptions:\n- This project is for beginners in data science and Python programming.\n- You’ve completed basic Python tutorials but are new to NumPy and array operations.\n- The environment is Jupyter Notebook.\n- Expected completion time: About 2 hours.\n\nStrict Feature Set:\n- Hands-on lab in Jupyter Notebook.\n- Step-by-step instructions and explanations for each operation.\n- Self-contained, directly runnable examples.\n- Practice exercises with instant, automatic answer checks.\n- All documentation and explanations must be inline with the code.\n\nLearning Outcomes Addressed:\n- Ability to create and manipulate NumPy arrays.\n- Understanding of broadcasting and advanced indexing to extract or summarize data.\n- Confidence in using NumPy for basic educational data analysis.\n\nProject Breakdown & Step-by-Step Guidance\n\nSection 1: Getting Started and Data Preparation (20 minutes)\n- Install and import NumPy.\n- Generate synthetic attendance data for 5 schools, each with 4 classes, for 20 days (NumPy arrays of shape [5, 4, 20], values represent number of students present).\n- Inline: Explain array creation (arange, random, reshape), data types, and dimensions.\n- Exercise: Create an array representing attendance for a new school using np.ones or np.zeros and fill in data.\n\nSection 2: Fundamental Array Operations (20 minutes)\n- Demonstrate selecting data by school, class, and day using standard and advanced indexing (integer, slicing, boolean).\n- Inline: Step-by-step explanations and code examples.\n- Exercise: Extract data for Class 2 in School 3 for days 5–10. Automatic answer check compares against the correct slice.\n\nSection 3: Data Cleaning and Broadcasting (20 minutes)\n- Show how to simulate and detect missing data (e.g., some entries are -1 for absent data).\n- Demonstrate replacement using boolean masking (set -1 to np.nan or a fill value).\n- Use broadcasting to convert student counts to attendance rates as percentages (dividing by class size).\n- Inline: Describe how shapes match up and broadcasting rules.\n- Exercise: Replace all -1 values with the average for that class. Answers are auto-checked.\n\nSection 4: Aggregate Analysis with NumPy (20 minutes)\n- Calculate daily, class-wise, or school-wise attendance averages using axis arguments with np.mean, np.sum.\n- Identify the day with the lowest overall attendance for each school.\n- Inline: Explain each aggregation, include plotted charts using matplotlib (optional extension for visualization).\n- Exercise: Find the highest average attendance class in School 4, checked by an assertion.\n\nSection 5: Advanced Indexing & Reporting (20 minutes)\n- Use advanced indexing to select all days where any class had <50% attendance.\n- Sort and rank schools/classes by monthly average attendance.\n- Inline: Explain difference between basic and advanced indexing.\n- Document all findings with narrative text in markdown and code comments.\n- Exercise: Write a function to return the lowest attendance day for any school. Provide a code cell for learners to fill in, with auto-check feedback.\n\nWrap-up and Reflection (10 minutes)\n- Recap main NumPy array operations learned.\n- Self-assessment checklist: Creating arrays, slicing, cleaning, broadcasting, basic data analysis.\n- Recommendations for further exploration within educational data using Numpy.\n\nSample Structure in Notebook (for each subsection):\n------------------------------------------------------\n1. Explanation in markdown.\n2. Code cell with a detailed, in-line documented example.\n3. Practice Exercise cell.\n4. Automatic answer check with assert or equivalence checks.\n------------------------------------------------------\n\nTime Breakdown:\n- Data Preparation and Array Creation: 20 min\n- Basic Manipulation (Slicing, Indexing): 20 min\n- Cleaning/Broadcasting: 20 min\n- Aggregation/Analysis: 20 min\n- Advanced Indexing/Reporting: 20 min\n- Review: 10 min\n\nDeliverable:\n\nA single, self-contained Jupyter Notebook named School_Attendance_NumPy_Lab.ipynb, containing:\n- Fully commented, runnable code for all examples and tasks.\n- Markdown and inline documentation after each cell.\n- Practice problems and auto-check solutions at the end of each core section.\n- Clear, beginner-friendly explanations tailored for complete NumPy newcomers.\n\nRelevance & Practical Application:\n\nBy completing the project, you’ll have used real-world data science workflows for educational improvement, mastered NumPy’s core array operations, and built an analysis-ready template you could apply to similar challenges in schools, non-profits, or basic administrative data scenarios.\n\nYour work will empower you to:\n- Confidently create and manipulate NumPy arrays.\n- Apply broadcasting and advanced indexing to analyze real educational data.\n- Use NumPy for meaningful data summaries and trend detection—crucial skills for any aspiring data analyst in education.\n\nStay strictly within the defined tasks—no advanced machine learning, external data sources, or non-NumPy operations. This project is your foundational step as a data scientist in education!"
+    }
+}
