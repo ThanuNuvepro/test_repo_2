@@ -1,7 +1,7 @@
 # Project Plan
 
 ## Basic Information
-- **ID:** f1b8e9c3-c435-4630-a195-0cd2c5abd6b0
+- **ID:** 1013e88b-4e58-43fa-8d5c-a42a35403233
 - **Name:** GL3 : Supervised Learning Lab
 - **Description:** Detailed specification for generating a Project using Generative AI
 - **Schema:** 2.0
@@ -12,9 +12,9 @@
 
 ## Users and Dates
 - **Created By:** rocky
-- **Created On:** 2026-02-26T16:28:33.636978
+- **Created On:** 2026-02-26T16:49:35.645174
 - **Modified By:** rocky
-- **Modified On:** 2026-02-26T16:29:22.922414
+- **Modified On:** 2026-02-26T16:51:17.523960
 - **Published On:** N/A
 
 ## User prompt
@@ -311,161 +311,205 @@ The generated project must enable learners to:
 ---
 
 ## Problem Statement
-- Problem Statement: Predicting Product Quality in a Real-World Manufacturing Setting Using Python Machine Learning Stack
+- Problem Statement: Predictive Maintenance Modeling for Industrial Equipment – A Manufacturing Analytics ML Pipeline
 
-Scenario Style
+Scenario
 
-Scenario Description
+You have just joined “SmartTech Manufacturing Solutions” as a Junior Data Analyst specializing in Manufacturing Analytics. The company operates a large production facility with hundreds of industrial machines, and unplanned downtime due to unexpected machine failures significantly impacts production efficiency and costs. The manufacturing management team has tasked you—with support from a Senior Data Scientist—to develop a predictive maintenance analytics pipeline to forecast potential machine failures before they occur.
 
-You are a Junior Data Analyst at ProFab Manufacturing Solutions, a mid-sized company specializing in mass production of automotive and electronic components. ProFab is facing increasing pressure to maintain high product quality standards while optimizing production speed. Recently, management noticed a rise in returns and defects, which has impacted customer satisfaction and increased waste. To address this, you are tasked with building an end-to-end predictive analytics pipeline that leverages manufacturing sensor and process data to forecast product quality issues, enabling proactive intervention and process optimization.
+As a Junior Data Analyst, your background includes basic Python programming, foundational data analysis, and introductory experience with machine learning concepts and libraries such as NumPy, Pandas, scikit-learn, matplotlib, and xgboost. You have limited exposure to deploying full ML pipelines, but you are eager to enhance your skills by taking on a realistic, end-to-end project that simulates an industry-standard approach.
 
-You are to immerse yourself as a Data Analyst within ProFab’s analytics team. Your goal is to deliver a robust, maintainable, and extensible Python codebase that empowers engineers and decision-makers to understand, predict, and reduce defective products in the pipeline—directly supporting the company’s strategic quality improvement initiatives.
+Problem Context
+
+In modern manufacturing, predictive maintenance leverages data from IoT sensors, machine logs, and historical failure records to forecast equipment breakdowns before they cause costly interruptions. You are supplied with a dataset containing historical sensor readings (e.g., vibration, temperature, pressure) and labeled failure events for a fleet of production machines.
+
+Your project involves building a fully-documented, modular ML pipeline. This includes setting up your Python project, ingesting and preprocessing raw data, performing exploratory data analysis (EDA) with visualizations, engineering relevant features, developing predictive models using scikit-learn and xgboost, evaluating and visualizing model performance, logging results, and making the entire architecture configurable and production-ready. You are expected to use best practices for code modularity, production logging, and error handling, and provide unit and integration tests with clear documentation.
 
 Project Objective
 
-The project objective is to design and implement a predictive analytics system using the Python Data Science Stack—including numpy, scikit-learn, matplotlib, and xgboost—to predict the outcome (pass/fail) of inspected products upon completion of the manufacturing process. This system will include a clean, modular codebase, thorough data analysis, model development, evaluation, and documentation. The solution should be reproducible, extensible, tested, and ready for deployment, providing actionable insights to manufacturing engineers.
+The objective is to design, implement, and document a robust and production-configurable machine learning pipeline for predictive maintenance in manufacturing, strictly using Python Data & ML tools (NumPy, scikit-learn, matplotlib, xgboost) and staying within the provided project feature set. The pipeline must: 
+- Load, clean, and preprocess raw sensor data from CSV files,
+- Conduct EDA and create compelling visualizations of relevant features, failure rates, and distributions,
+- Build and compare at least two predictive models (one using scikit-learn, one using xgboost),
+- Evaluate and visualize results using standard ML metrics,
+- Automate hyperparameter search with results logged to disk,
+- Provide all configurations via YAML/JSON, 
+- Deliver a structure ready for deployment, testing, and further collaboration.
 
-Industry Context
+Learning Outcomes
 
-High defect rates in manufacturing not only result in increased waste and costs, they also harm reputation and sustainability goals. By accurately predicting product failures before they leave the factory, you will enable earlier interventions, smarter process adjustments, and better resource allocation, all of which translate to competitive advantage in modern manufacturing.
+Upon completing this project, you will have demonstrated the ability to:
+- Develop and test modular data pipelines for manufacturing analytics using standard Python tools,
+- Engineer features and apply/compare ML methods (scikit-learn, xgboost) on real-world-style manufacturing data,
+- Analyze, visualize, and interpret model outcomes, providing actionable recommendations for maintenance planning,
+- Configure, deploy, and thoroughly document an ML pipeline ready for real-world production environments, using comprehensive comments and documentation.
 
-Project Deliverables (Feature Set Strict Adherence)
+Target Audience & Assumptions
 
-Your implementation will strictly adhere to the following technical and organizational deliverables:
+This project is designed for Junior Data Analysts and Early Career Data Scientists with:
+- Basic Python and command-line skills,
+- Familiarity with Pandas, NumPy, and matplotlib,
+- Awareness of supervised machine learning and model evaluation concepts,
+- No prior experience required with advanced deployment or automation tools—only Python-standard practices, but with emphasis on writing modular, readable, testable, and maintainable code.
 
-- Structured codebase with clear separation (src, tests, docs, config, scripts)
-- Provision and ingestion of raw and sample manufacturing data for predictive modeling tasks (e.g., sensor readings, process parameters, QC labels)
-- Scripts for loading, preprocessing, cleaning, and analyzing manufacturing datasets
-- Feature engineering scripts to transform sensor/process data for modeling
-- Model training pipelines using scikit-learn and xgboost for binary (pass/fail) quality prediction
-- Rigorous evaluation of model performance using accuracy, precision, recall, F1, AUC-ROC and confusion matrix
-- Data visualizations for exploratory analysis, feature importance, and model results using matplotlib
-- Extensible framework for new experiments (e.g., add new models, features, or datasets)
-- Config files to ensure experiment and pipeline reproducibility
-- Testing suite (e.g., pytest) for all core modules to maintain code reliability
-- Deployment and setup scripts (bash/Makefile/python) for reproducibility and automation
-- Comprehensive documentation and user guide for users and maintainers
+Time Constraints
 
-Learning Outcomes Addressed
+The fully modular pipeline should be implemented and tested in a 2-hour focused core coding session (core MVP), with additional learning and refinement (total project including testing, documentation, and extension not to exceed ~70 hours of study and practice). Milestones for the 2-hour session will be clearly defined in the technical instruction below.
 
-By completing this project, you will:
+Project Technical Requirements & Deliverables
 
-- Gain hands-on experience with numpy for data manipulation, scikit-learn and xgboost for building and evaluating ML models, and matplotlib for data and model result visualization
-- Develop a clear understanding of the ML pipeline from raw manufacturing data ingestion, preprocessing, feature engineering, model development/evaluation, to final prediction and reporting
-- Build, tune, and evaluate predictive models for real-world manufacturing analytics, directly addressing a key industry challenge—reducing defections and improving quality
-- Learn and practice best practices in ML project structure, modular code organization, version control, reproducible experimentation, code quality (testing & linting), and deployment procedures required in professional analytics environments
+Your task is to deliver a fully functional, modular, and documented machine learning analytics pipeline for predictive maintenance, strictly adhering to the following requirements:
 
-Target Audience Alignment
+1. Project Directory Structure & Modular Code
+   - Use a standard production-style Python project layout (e.g., src/, data/, tests/, configs/, notebooks/, logs/, scripts/). All source code must be modular and reusable.
 
-- This project is designed for Juniors and Beginners with foundational Python programming and a basic conceptual understanding of machine learning (e.g., supervised learning, basic model evaluation); no advanced mathematics or prior domain expertise required.
-- Technical instructions, documentation, and code comments will be clear, concise, and scaffolded for a beginner’s experience level.
-- Each workflow stage will include basic templates and code samples to guide you through the process.
+2. Data Ingestion & Preprocessing Pipeline
+   - Code modules to robustly load sensor data from CSV (via configurable path in YAML/JSON). Apply cleaning steps: handle missing values (e.g., impute/flag/drop), correct data types, convert time stamps, and scale features as needed. Output results to processed data files.
 
-Time Constraints and Milestones
+3. Exploratory Data Analysis Visualizations
+   - Develop EDA scripts/notebooks to visualize distributions, relationships, class balance, feature importance, and time-based trends using matplotlib. EDA outputs (plots/charts) must be saved to disk.
 
-The entirety of the project is scoped to be completed within 70 learning hours, at a recommended 2-hour/session schedule, with an estimated 2 hours for capstone presentation and wrap-up at the end. Example high-level breakdown:
+4. Predictive Model Creation (scikit-learn & xgboost)
+   - Implement at least two classifiers: one using scikit-learn (e.g., RandomForestClassifier or LogisticRegression), and one using xgboost (XGBClassifier). Encapsulate each in a modular pipeline for reuse.
 
-1. Project setup, repo structure, raw data inspection (4 hrs)
-2. Data loading scripts and initial EDA (6 hrs)
-3. Data cleaning & preprocessing (8 hrs)
-4. Feature engineering (6 hrs)
-5. Baseline model building (scikit-learn) (8 hrs)
-6. Model improvement, hyperparameter tuning (xgboost) (8 hrs)
-7. Model evaluation & metrics deep-dive (8 hrs)
-8. Visualization and reporting (6 hrs)
-9. Testing suite/design patterns for maintainability (6 hrs)
-10. Deployment and reproducibility scripting (6 hrs)
-11. Documentation and user guide (2 hrs)
-12. Capstone wrap-up & presentation prep (2 hrs)
+5. Model Evaluation Reports & Metrics Visualization
+   - Evaluate models using accuracy, precision, recall, F1, ROC-AUC, and confusion matrix. Visualize results and save plots. Generate a written evaluation report (markdown or text file) summarizing findings.
 
-All tasks are modular, making it easy to track progress, revisit difficult sections, and collaborate with team members as needed.
+6. Hyperparameter Search & Results Logging
+   - Automate grid or random hyperparameter search for each model (using scikit-learn GridSearchCV/RandomizedSearchCV or xgboost’s equivalents). Log parameter sets and scores to disk in a readable format (CSV or JSON).
 
-Actionable Step-by-Step Execution
+7. Configurable Pipeline (YAML/JSON)
+   - All paths, parameters, and model settings must be definable from external YAML or JSON config files, enabling easily reproducible runs.
 
-1. Set up a clean project repository with separate folders: src (core logic), tests (unit/integration tests), docs (user/developer docs), config (YAML/JSON config files), scripts (reproducibility/deployment scripts), and data (raw and sample datasets).
-2. Provide manufacturing raw data samples (CSV/Parquet), including process readings, timestamps, and pass/fail labels.
-3. Implement scripts to load, validate, and explore the dataset. Document all anomalies or missing values.
-4. Write preprocessing modules to clean data (handle missing values, encoding, scaling).
-5. Develop feature engineering scripts/functions to extract meaningful features; document rationale for each feature.
-6. Build and train baseline ML models (LogisticRegression, RandomForest using scikit-learn). Document assumptions and parameter choices.
-7. Advance to xgboost for model improvement. Conduct hyperparameter tuning and compare model performance.
-8. Create comprehensive evaluation reports using multiple metrics (accuracy, precision, recall, F1, ROC, confusion) to guide model selection.
-9. Implement data and model result visualizations (e.g., distribution plots, feature importances, ROC curves) with matplotlib.
-10. Design your codebase to allow easy addition of new features/models (object-oriented or pipeline patterns).
-11. Use config files to standardize all experiment parameters for full reproducibility.
-12. Write unit tests for all major preprocessing, feature engineering, and modeling functions (pytest).
-13. Write and test deployment/setup scripts for easy environment setup and model application.
-14. Write clear, legible documentation and a user guide targeted to fellow beginners, explaining setup, running instructions, and troubleshooting steps.
+8. Comprehensive Code Comments & Documentation
+   - Provide clear comments in all modules explaining logic and design decisions. Include docstrings for all functions/classes.
 
-Expected Outcome
+9. Setup, Build, Deployment & Test Scripts
+   - Scripted setup (e.g., requirements.txt and setup.sh or .bat), run and build scripts for each phase (data pipeline, train, evaluate, EDA), and deployment-style wrapper (main.py).
 
-At the project’s completion, you will have produced:
+10. Sample/Test Datasets
+    - Provide a (synthetic or anonymized) CSV data sample with sufficient records for testing pipelines. Ensure the data represents plausible sensor and failure-labeled information but does not include any private or real production data.
 
-- A robust, modular and tested Python codebase that ingests raw manufacturing data and predicts product quality outcomes
-- Multiple trained and well-evaluated predictive models, with rationale for model selection
-- Clear, actionable visualizations and reports that can be used by ProFab’s engineers for process improvement
-- A fully documented, reproducible, and ready-to-deploy analytics pipeline, following the best practices for production-quality machine learning in manufacturing
+11. Production-Style Logging & Error Handling
+    - Ensure all modules use Python logging to provide runtime information and capture errors/exceptions in log files.
 
-By following this scenario-driven, industry-grounded, and technically rigorous project, you will confidently demonstrate core skills in Data Science and Machine Learning for manufacturing analytics, and be well-prepared for real-world roles in predictive analytics and quality engineering teams.
+12. Unit & Integration Test Suites
+    - Write unit tests (e.g., pytest) for core pipeline modules (data processing, modeling). Provide basic integration tests for end-to-end pipeline validation.
 
-End of Problem Statement.
+13. Detailed README with Setup and Usage Guides
+    - A comprehensive README.md describing:
+      - Project overview and objectives,
+      - Step-by-step setup/install instructions,
+      - Usage guide for running the entire pipeline (with config files),
+      - Explanation of the project structure and testing procedures,
+      - Example commands for each step,
+      - Descriptions of inputs/outputs and directory contents.
+
+Step-by-Step Breakdown (Core Project, 2-Hour MVP)
+
+0:00 – 0:15  |  Project Setup
+   - Scaffold directory structure and add initial README.md.
+   - Initialize git, add requirements.txt, place a sample dataset in /data/raw.
+
+0:15 – 0:35  |  Data Ingestion & Preprocessing
+   - Implement data_loader.py to load from CSV, configurable via configs/data_config.yaml.
+   - Implement preprocess.py to clean and scale data, with robust error handling/logging.
+   - Save processed data to /data/processed.
+
+0:35 – 0:55  |  Exploratory Data Analysis (EDA)
+   - Implement eda.py or a Jupyter notebook to produce and save basic EDA visualizations (distributions, correlations, time trends, class balance) in /notebooks or /eda.
+
+0:55 – 1:20  |  Predictive Model Development
+   - Implement model_scikit.py (e.g., RandomForest/LogisticRegression pipeline).
+   - Implement model_xgboost.py (XGBClassifier pipeline).
+   - Both must accept input data and parameters via YAML/JSON config.
+
+1:20 – 1:35  |  Model Evaluation & Visualization
+   - Implement evaluate.py for metrics calculation.
+   - Save evaluation metrics, confusion matrices, and ROC curves to /results.
+
+1:35 – 1:50  |  Hyperparameter Search & Logging
+   - Launch script for Config-driven hyperparameter search.
+   - Log search results and best parameters to /logs or /results.
+
+1:50 – 2:00  |  Testing & Documentation
+   - Write at least one unit test for each major component (pytest), store in /tests.
+   - Update README.md: include quickstart and high-level usage guide.
+
+Summary of Deliverables
+
+- Modular Python codebase, with robust directory structure;
+- Data ingestion, preprocessing, EDA, modeling, evaluation modules/scripts;
+- Scikit-learn and xgboost classifiers, hyperparameter search with logging;
+- Config files for full pipeline operation;
+- Logging, error handling, code comments, and docstrings;
+- End-to-end test datasets;
+- Unit/integration tests for core components;
+- Complete README with setup, run, and deployment guidance.
+
+All instructions, scripts, and code must remain within the scope of Data Science & Machine Learning applied to the predictive maintenance domain in manufacturing, strictly using Python Data & ML tools: NumPy, scikit-learn, matplotlib, xgboost. No external ML platforms, big data frameworks (e.g., Spark), or non-specified visualization/reporting tools.
+
+This project will empower you to apply fundamental analytics, machine learning, and software engineering best practices to solve a real-world manufacturing challenge, preparing you for industrial-scale ML projects in your career.
 ---
 
 # Project Specification
 
 ## Overview
 - **Tech Domain:** Data Science & Machine Learning
-- **Tech Subdomain:** Python Predictive Analytics Stack
+- **Tech Subdomain:** Python Data & ML (NumPy, scikit-learn, matplotlib, xgboost)
 - **Application Domain:** Manufacturing Analytics
-- **Application Subdomain:** manufacturing_product_quality_prediction
+- **Application Subdomain:** Predictive Modeling Project
 - **Target Audience:** Junior
 - **Difficulty Level:** Beginner
-- **Time Constraints:** 70 hours (2 hours per session, estimated capstone completion time: 2 hours)
+- **Time Constraints:** 2 hours (core project, total 70 hours learning)
 - **Learning Style:** guided
 - **Requires Research:** False
 
 ## Global Feature Set
-- Structured codebase with clean separation (src, tests, docs, config, scripts)
-- Raw and sample manufacturing data for predictive tasks
-- Scripts for loading, preprocessing, and analyzing manufacturing datasets
-- Model training using scikit-learn and xgboost
-- Evaluation using different metrics
-- Visualizations for data exploration and model results
-- Extensible for new experiments
-- Config files for reproducible setup
-- Testing suite for all core modules
-- Deployment and setup scripts
-- Comprehensive documentation and user guide
+- Project directory structure with modular Python code
+- Data ingestion and preprocessing pipelines
+- Exploratory data analysis visualizations
+- Predictive model creation using scikit-learn and xgboost
+- Model evaluation reports and metrics visualization
+- Hyperparameter search and results logging
+- Configurable pipeline using YAML/JSON
+- Comprehensive code comments and documentation
+- Setup, build, deployment and test scripts
+- Sample/test datasets
+- Production-style logging and error handling
+- Unit and integration test suites
+- Detailed README with setup and usage guides
 
 
 ## Global Learning Outcomes
-- Gain hands-on experience with the numpy/scikit-learn/matplotlib/xgboost stack
-- Understand the ML pipeline from raw manufacturing data to prediction
-- Be able to build and evaluate predictive models for manufacturing analytics
-- Learn best practices in ML project structure, code quality, and deployment
+- Develop and test data pipelines for manufacturing analytics
+- Apply and compare ML methods (scikit-learn, xgboost) on real-world data
+- Analyze, visualize, and interpret predictive model results
+- Configure, deploy, and document a production ML project
 
 
 ## Acceptance Criteria
-- Project structure faithfully follows specified directory layout
-- All core modules implemented with working code
-- Project runs end-to-end with the provided sample data
-- Proper error handling and logging implemented throughout
-- Unit and integration tests pass with high coverage
-- Documentation and setup guides are present and complete
-- All code meets industry best practices and coding standards
-- All features as described in the requirements are demonstrable
+- Complete and clean project directory as per specification
+- All source code is functional, documented, and runs successfully after setup
+- Project setup and dependency installations work as described in the README
+- All tests pass successfully
+- Data pipeline handles typical manufacturing-analytics data (with missing values, outliers)
+- All required ML models are trained, evaluated, and results visualized
+- Production-level code organization, configuration, error handling, and logging are present
+- Documentation is accurate, thorough, and includes usage examples
+- Deployment scripts enable local and cloud setup
 
 
 ## Deliverables
-- Complete codebase with all source files
-- requirements.txt with all dependencies
-- Configuration files (YAML/JSON as needed) in config/
-- Testing suite in tests/ with pytest
-- Comprehensive README.md, user guide, and code comments
-- Deployment/setup scripts and instructions in scripts/
-- Sample manufacturing data for demonstration
-- .gitignore
-- Complete doc files including feature and API documentation (if any)
+- Complete, ready-to-run project directory
+- All source Python scripts (modular, well-commented and production-ready)
+- Configuration files (YAML/JSON) for pipeline setup
+- Sample and test datasets (CSV/Excel, simulated manufacturing data)
+- Unit and integration test scripts with documentation
+- README.md with setup, configuration and usage guide
+- Build and deployment scripts
+- Test coverage report
+- API documentation section (for CLI/module usage, not web API)
 
 
 ---
@@ -473,10 +517,10 @@ End of Problem Statement.
 # Projects
 
   
-  ## 1. Data Science & Machine Learning (Python Predictive Analytics Stack)
+  ## 1. Data Science & Machine Learning (Python Data & ML (NumPy, scikit-learn, matplotlib, xgboost))
 
   ### Tech Stack
-  - **Language:** Python (>=3.8)
+  - **Language:**  ()
   - **Framework:**  ()
 
   ### Testing
@@ -511,34 +555,42 @@ End of Problem Statement.
 
   ### Learning Outcomes
   
-  - Ability to design and develop machine learning pipelines for manufacturing analytics
+  - Practical data preprocessing for real-world datasets
   
-  - Expertise in NumPy, scikit-learn, matplotlib, and xgboost APIs
+  - Exploratory analysis and insights using statistical and graphical methods
   
-  - Experience in model evaluation with industry-relevant metrics
+  - Building, training, and evaluating ML models using scikit-learn and xgboost
   
-  - Proficiency in cleaning and preprocessing real-world manufacturing data
+  - Working knowledge of performance metrics and how to visualize them
   
-  - Understanding of code modularization and best practices
+  - Hyperparameter search and pipeline optimization
   
-  - Preparation for deploying ML models in production environments
+  - How to structure and document production-ready data science projects
+  
+  - How to test and validate ML pipelines
+  
+  - Understanding of error handling, security, and configuration best practices
   
 
   ### Feature Set
   
-  - Fully-structured Python codebase
+  - Import and preprocessing of manufacturing analytics datasets
   
-  - Flexible config for feature selection and model tuning
+  - Exploratory Data Analysis with visualization
   
-  - Reusable preprocessing and feature engineering modules
+  - NumPy-powered feature engineering
   
-  - Model selection between scikit-learn and xgboost
+  - Model training and comparison (linear regression, XGBoost, etc.)
   
-  - Deployment/readiness scripts
+  - ML metrics reporting and matplotlib plots
   
-  - Test suites with sample/edge-case data
+  - Configurable project setup with YAML/JSON
   
-  - Logging and error reporting
+  - Comprehensive Python package setup (requirements.txt or pyproject.toml)
+  
+  - Unit and integration tests for core logic
+  
+  - Deployment and environment scripts (bash/PowerShell)
   
 
   ### API Documentation
