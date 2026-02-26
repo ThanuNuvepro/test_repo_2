@@ -1,0 +1,59 @@
+[
+    {
+        "profile": "STUDIO",
+        "crew_llm": {
+            "config": "OPENAI_GPT_4_1",
+            "planning": "OPENAI_GPT_4_1",
+            "research": "OPENAI_GPT_4_1",
+            "solution": "OPENAI_GPT_4_1",
+            "stub_code": "OPENAI_GPT_4_1",
+            "test_case": "OPENAI_GPT_4_1",
+            "partial_code": "OPENAI_GPT_4_1",
+            "solution_review": "OPENAI_GPT_4_1",
+            "problem_statement": "OPENAI_GPT_4_1",
+            "research_with_tool": "OPENAI_GPT_4_1",
+            "modules_and_activities": "OPENAI_GPT_4_1"
+        },
+        "api_keys": {
+            "ANTHROPIC_API_KEY": "**********X_wAA",
+            "PERPLEXITYAI_API_KEY": "**********qOmmW",
+            "GEMINI_API_KEY": "**********_fj1s",
+            "OPENAI_API_KEY": "**********0DhoA"
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "planning_crew",
+        "usage_metrics": {
+            "total_tokens": 5422,
+            "prompt_tokens": 4297,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1125,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "problem_statement_crew",
+        "usage_metrics": {
+            "total_tokens": 3291,
+            "prompt_tokens": 2028,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1263,
+            "successful_requests": 1
+        }
+    },
+    {
+        "execution_id": "596a626a-1a77-4f82-8ca3-6b286ebd810c",
+        "project_name": "Lab: PostgreSQL Fundamentals",
+        "created_by": "rocky",
+        "created_on": "2026-02-26T03:15:21.434301",
+        "modified_by": "rocky",
+        "modified_on": "2026-02-26T03:16:41.362461",
+        "owner": "Nuvepro",
+        "prompt": "Generate lab for module: PostgreSQL Fundamentals"
+    },
+    {
+        "Application_duration": 1.36
+    }
+]
