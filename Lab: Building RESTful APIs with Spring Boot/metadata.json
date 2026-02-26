@@ -1,0 +1,169 @@
+{
+    "id": "8b158587-a50c-47db-ab72-710648efcf35",
+    "name": "Lab: Building RESTful APIs with Spring Boot",
+    "description": "Detailed specification for generating a Project using Generative AI",
+    "schema": "2.0",
+    "owner": "Nuvepro",
+    "created_by": "rocky",
+    "created_on": "2026-02-26T03:36:51.023006",
+    "modified_by": "rocky",
+    "modified_on": "2026-02-26T03:37:56.646399",
+    "published_on": "",
+    "category": "",
+    "version": "Lab: Building RESTful APIs with Spring Boot",
+    "locale": "en_US",
+    "plan_spec": {
+        "tech_domain": "Backend Development",
+        "tech_subdomain": "Spring Boot",
+        "application_domain": "General",
+        "application_subdomain": "restful_api_development",
+        "target_audience": "Intermediate Java Developers seeking to learn API construction with Spring Boot",
+        "difficulty_level": "Intermediate",
+        "time_constraints": "6-8 hours",
+        "prerequisites": [
+            "Basic Java programming",
+            "Understanding of HTTP/REST concepts",
+            "Familiarity with object-oriented programming principles",
+            "Knowledge of Maven/Gradle build tools",
+            "Introductory exposure to relational databases (e.g. MySQL)"
+        ],
+        "scope": [
+            "REST architectural principles",
+            "HTTP methods (GET, POST, PUT, DELETE)",
+            "Spring Boot application setup",
+            "Creating RESTful Controllers",
+            "CRUD operations with JPA and Spring Data",
+            "Service and Repository layers",
+            "Entity modeling and data validation",
+            "Error handling and exception management",
+            "API documentation with Swagger/OpenAPI",
+            "Testing REST APIs (unit, integration)"
+        ],
+        "feature_set": [
+            "Bootstrapping a Spring Boot project",
+            "Exposing RESTful endpoints for an entity",
+            "Implementing CRUD operations",
+            "Input validation",
+            "Persistence layer using JPA",
+            "Configuring application.properties",
+            "Error and exception handling",
+            "Unit and integration tests for controllers and services",
+            "Generating and viewing API docs with Swagger UI"
+        ],
+        "problem_statement_style": "scenario",
+        "projects": [
+            {
+                "project_name": "restful_api_development_springboot",
+                "tech_domain": "Backend Development",
+                "tech_subdomain": "Spring Boot",
+                "skill": "springboot",
+                "tech_stack": {
+                    "language": {
+                        "name": "Java",
+                        "version": "17"
+                    },
+                    "framework": {
+                        "name": "Spring Boot",
+                        "version": "3.1+"
+                    }
+                },
+                "testing": null,
+                "scope": {
+                    "REST Concepts": [
+                        "HTTP Methods",
+                        "Status Codes",
+                        "API versioning"
+                    ],
+                    "Spring Boot Fundamentals": [
+                        "Project setup with Spring Initializr",
+                        "Dependency management"
+                    ],
+                    "Data Persistence": [
+                        "JPA Entities",
+                        "Spring Data Repositories",
+                        "Schema Generation"
+                    ],
+                    "API Development": [
+                        "REST Controller creation",
+                        "CRUD endpoints",
+                        "DTOs and Model Mapping"
+                    ],
+                    "Validation & Error Handling": [
+                        "Bean Validation (javax.validation)",
+                        "Exception Handler (ControllerAdvice)"
+                    ],
+                    "API Documentation": [
+                        "OpenAPI/Swagger integration"
+                    ],
+                    "Testing": [
+                        "Unit Test best practices",
+                        "Integration/E2E Testing",
+                        "MockMvc"
+                    ]
+                },
+                "prerequisites": [
+                    "Java 17+ installed",
+                    "Maven (or Gradle) installed",
+                    "Basic knowledge of Spring Boot",
+                    "MySQL installed or Dockerized MySQL (optional for local)",
+                    "Familiarity with Postman or cURL"
+                ],
+                "runtime_environment": {
+                    "Build": "Maven",
+                    "Database": "MySQL",
+                    "Host": "localhost",
+                    "Port": "3306",
+                    "Username": "testuser",
+                    "Password": "Testuser123$",
+                    "IDE": "IntelliJ IDEA or VS Code",
+                    "OS Requirements": "Windows 10+, macOS Monterey+, or Ubuntu 20.04+"
+                },
+                "learning_outcomes": [
+                    "Proficient setup of a Java Spring Boot project for API development",
+                    "Ability to design and implement RESTful endpoints",
+                    "Mastery in structuring back-end logic with Controller-Service-Repository pattern",
+                    "Hands-on skills in validation and error management",
+                    "Generation and exploration of API documentation with Swagger",
+                    "Establishment of disciplined unit and integration testing practices"
+                ],
+                "feature_set": [
+                    "REST endpoints for entity (e.g., User/Product)",
+                    "CRUD operation support",
+                    "Validation and error messages",
+                    "Database DDL and interaction with MySQL",
+                    "API documentation auto-generation",
+                    "Comprehensive test suite"
+                ],
+                "api_documentation": null,
+                "output_resource_type": "code",
+                "dependency_type": null
+            }
+        ],
+        "acceptance_criteria": [
+            "All endpoints conform to REST conventions (correct HTTP methods, status codes)",
+            "Entity CRUD operations are fully functional and tested",
+            "Input validation rules are enforced (with clear error messages for invalid input)",
+            "No runtime exceptions on basic usage as per instructions",
+            "Swagger UI exposes all endpoints and documentation is readable",
+            "At least 80% test coverage on critical service and controller logic"
+        ],
+        "deliverables": [
+            "Spring Boot project source code",
+            "Maven build file (pom.xml)",
+            "REST API endpoints for the primary entity",
+            "README with run instructions",
+            "Test source files with sample test cases",
+            "API documentation accessible via Swagger UI"
+        ],
+        "need_research": "False",
+        "learning_outcomes": [
+            "Understand the steps and principles behind RESTful API building in Java with Spring Boot",
+            "Be equipped to design, document, and test real-world backend APIs",
+            "Gain experience in error handling, validation, and automated documentation generation"
+        ],
+        "learning_style": "guided",
+        "assessment_type": null,
+        "user_prompt": "Generate lab for module: Building RESTful APIs with Spring Boot",
+        "problem_statement": "Scenario-Based Comprehensive Project Problem Statement\n\nScenario Description:\nYou have recently joined “Acme Resource Management Solutions” as a Backend Developer. The company is expanding its product to support a rapidly growing client base, and you have been tasked with designing and implementing a robust and well-documented RESTful API to manage company resources—specifically, Employees. Your task is vital because your API will serve as the foundation for internal tools and future integrations (such as payroll systems and HR dashboards). Your stakeholders, ranging from frontend developers to business analysts, require an easy-to-use, reliable, and well-documented API. As such, adopting modern backend development best practices is essential.\n\nProject Objective:\nDesign and implement a RESTful Employee Management API using Spring Boot. The API must expose well-documented endpoints for managing Employee records—covering creation, retrieval, updates, and deletion (CRUD). The solution should ensure data persistence via JPA, enforce strong input validation, provide meaningful error handling, and offer comprehensive automated documentation using Swagger UI. This API will be leveraged internally, forming the company’s standard for backend service quality.\n\nLearning Outcomes:\nBy completing this project, Intermediate Java Developers will:\n\n- Understand the steps and principles behind RESTful API building in Java with Spring Boot, from initial project setup to endpoint exposure.\n- Be equipped to design, document, and test real-world backend APIs, addressing business needs through well-structured code and comprehensive documentation.\n- Gain firsthand experience in error handling, input validation, and automated API documentation generation, which are foundational to robust backend development.\n\nTarget Audience Alignment:\nThis project is tailored for Intermediate Java Developers comfortable with core Java and object-oriented programming who are beginning their journey with Spring Boot and REST API development. Prior exposure to annotation-based development, basic unit testing, and relational data models is assumed. No advanced knowledge in areas outside the core Spring Boot RESTful stack (such as security or microservices) is required. The timeline is designed to be completed in 6-8 hours with clear milestones.\n\nProblem Context:\nAcross industries, maintaining accurate and reliable employee records is critical for effective operations. Systems must not only store and manage large amounts of employee data but also ensure data quality through validation and handle errors gracefully. Business stakeholders require easy ways to consume or explore this data, which makes automated and interactive API documentation mandatory. Given these consistent industry demands, your assignment is to build the backend API that addresses these vital needs.\n\nProject Requirements and Breakdown (within a 6-8 hour timeline):\n\n1. Bootstrapping a Spring Boot Project (30 min)\n   - Initialize a new Spring Boot project using Spring Initializr or a similar tool.\n   - Select dependencies: Spring Web, Spring Data JPA, H2 Database (for local development), and Springdoc OpenAPI/Swagger UI.\n   - Organize the project structure into typical layers: controller, service, repository, model (entity), and test packages.\n\n2. Persistence Layer Using JPA (45 min)\n   - Define the Employee entity with fields: id (Long, primary key), firstName (String), lastName (String), email (String), department (String), and hireDate (LocalDate).\n   - Map the entity to a database table using JPA annotations.\n   - Implement a JPA repository interface for Employee with standard CRUD operations.\n\n3. Configuring application.properties (20 min)\n   - Configure datasource settings for H2 in-memory database.\n   - Enable JPA-related settings (e.g., auto-ddl).\n   - Set up additional properties to enable the H2 console and customize Swagger/OpenAPI endpoints.\n\n4. Exposing RESTful Endpoints for Employee Entity (1 hour)\n   - Implement a REST controller exposing the following endpoints:\n     - POST /employees – Create an employee\n     - GET /employees – List all employees\n     - GET /employees/{id} – Retrieve employee by ID\n     - PUT /employees/{id} – Update employee information\n     - DELETE /employees/{id} – Remove an employee\n   - Use appropriate HTTP status codes and responses for each operation.\n\n5. Input Validation (40 min)\n   - Apply validation annotations in the Employee entity/DTO (e.g., @NotBlank, @Email, @Past for hireDate).\n   - Ensure the controller receives and enforces valid input, returning detailed error messages for invalid data.\n   - Write unit tests to verify validation logic is triggered as intended.\n\n6. Error and Exception Handling (40 min)\n   - Implement a global exception handler using @ControllerAdvice.\n   - Provide meaningful error responses for scenarios such as entity not found, validation errors, or generic server errors.\n   - Ensure that API consumers receive consistent, understandable error formats.\n\n7. Unit and Integration Testing (1 hr 30 min)\n   - Write unit tests for EmployeeService methods using JUnit and Mockito.\n   - Develop integration tests for REST endpoints with Spring Boot Test and MockMvc, validating for correct CRUD flows and error handling.\n   - Ensure tests are organized and runnable through the command line/IDE.\n\n8. Generating and Viewing API Docs with Swagger UI (30 min)\n   - Integrate Springdoc OpenAPI to automatically generate API documentation.\n   - Annotate controller methods with summaries and parameter descriptions where appropriate.\n   - Confirm that all endpoints, input models, error responses, and data types are properly documented.\n   - Verify access to the Swagger UI, allowing stakeholders to view and interact with the API.\n\nMilestones and Time Allocation:\n- Project Setup & JPA Layer: 1 hr 15 min\n- Properties Configuration: 20 min\n- REST Controller: 1 hour\n- Validation: 40 min\n- Error Handling: 40 min\n- Testing: 1 hr 30 min\n- Swagger Documentation: 30 min\n\nTotal Time: Approx. 6-8 hours\n\nSubmission/Completion Criteria:\n- The Spring Boot project runs successfully, exposing the Employee Management API.\n- All CRUD endpoints are functional, validated, and return appropriate status codes.\n- Input validation and error handling are applied and verifiable through API responses.\n- Unit and integration tests cover core logical flows and edge cases.\n- API documentation is accessible via Swagger UI and accurately represents the API.\n- Source code is structured with clear separation of concerns and organized according to modern Spring Boot conventions.\n\nBy completing this project, you will deeply engage with real-world Spring Boot patterns in backend RESTful API development, learning to build, validate, document, and test APIs to a professional standard aligned with industry best practices—all within a practical, time-boxed scenario that simulates modern business requirements."
+    }
+}

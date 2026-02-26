@@ -1,0 +1,59 @@
+[
+    {
+        "profile": "STUDIO",
+        "crew_llm": {
+            "config": "OPENAI_GPT_4_1",
+            "planning": "OPENAI_GPT_4_1",
+            "research": "OPENAI_GPT_4_1",
+            "solution": "OPENAI_GPT_4_1",
+            "stub_code": "OPENAI_GPT_4_1",
+            "test_case": "OPENAI_GPT_4_1",
+            "partial_code": "OPENAI_GPT_4_1",
+            "solution_review": "OPENAI_GPT_4_1",
+            "problem_statement": "OPENAI_GPT_4_1",
+            "research_with_tool": "OPENAI_GPT_4_1",
+            "modules_and_activities": "OPENAI_GPT_4_1"
+        },
+        "api_keys": {
+            "ANTHROPIC_API_KEY": "**********X_wAA",
+            "PERPLEXITYAI_API_KEY": "**********qOmmW",
+            "GEMINI_API_KEY": "**********_fj1s",
+            "OPENAI_API_KEY": "**********0DhoA"
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "planning_crew",
+        "usage_metrics": {
+            "total_tokens": 5606,
+            "prompt_tokens": 4301,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1305,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "problem_statement_crew",
+        "usage_metrics": {
+            "total_tokens": 3524,
+            "prompt_tokens": 2179,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1345,
+            "successful_requests": 1
+        }
+    },
+    {
+        "execution_id": "8b158587-a50c-47db-ab72-710648efcf35",
+        "project_name": "Lab: Building RESTful APIs with Spring Boot",
+        "created_by": "rocky",
+        "created_on": "2026-02-26T03:36:51.023006",
+        "modified_by": "rocky",
+        "modified_on": "2026-02-26T03:37:56.646399",
+        "owner": "Nuvepro",
+        "prompt": "Generate lab for module: Building RESTful APIs with Spring Boot"
+    },
+    {
+        "Application_duration": 1.11
+    }
+]
