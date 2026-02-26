@@ -1,0 +1,59 @@
+[
+    {
+        "profile": "STUDIO",
+        "crew_llm": {
+            "config": "OPENAI_GPT_4_1",
+            "planning": "OPENAI_GPT_4_1",
+            "research": "OPENAI_GPT_4_1",
+            "solution": "OPENAI_GPT_4_1",
+            "stub_code": "OPENAI_GPT_4_1",
+            "test_case": "OPENAI_GPT_4_1",
+            "partial_code": "OPENAI_GPT_4_1",
+            "solution_review": "OPENAI_GPT_4_1",
+            "problem_statement": "OPENAI_GPT_4_1",
+            "research_with_tool": "OPENAI_GPT_4_1",
+            "modules_and_activities": "OPENAI_GPT_4_1"
+        },
+        "api_keys": {
+            "ANTHROPIC_API_KEY": "**********X_wAA",
+            "PERPLEXITYAI_API_KEY": "**********qOmmW",
+            "GEMINI_API_KEY": "**********_fj1s",
+            "OPENAI_API_KEY": "**********0DhoA"
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "planning_crew",
+        "usage_metrics": {
+            "total_tokens": 5589,
+            "prompt_tokens": 4303,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1286,
+            "successful_requests": 1
+        }
+    },
+    {
+        "project_name": "planning",
+        "crew_name": "problem_statement_crew",
+        "usage_metrics": {
+            "total_tokens": 3758,
+            "prompt_tokens": 2230,
+            "cached_prompt_tokens": 0,
+            "completion_tokens": 1528,
+            "successful_requests": 1
+        }
+    },
+    {
+        "execution_id": "3153eb5e-8f5f-43a4-ba3d-1c85ce89f6fd",
+        "project_name": "Lab: Spring Boot: Advanced Service Composition and Error Handling",
+        "created_by": "rocky",
+        "created_on": "2026-02-26T03:59:19.992695",
+        "modified_by": "rocky",
+        "modified_on": "2026-02-26T04:00:00.070076",
+        "owner": "Nuvepro",
+        "prompt": "Generate lab for module: Spring Boot: Advanced Service Composition and Error Handling"
+    },
+    {
+        "Application_duration": 0.69
+    }
+]

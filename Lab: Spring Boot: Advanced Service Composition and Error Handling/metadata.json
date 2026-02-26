@@ -1,0 +1,166 @@
+{
+    "id": "3153eb5e-8f5f-43a4-ba3d-1c85ce89f6fd",
+    "name": "Lab: Spring Boot: Advanced Service Composition and Error Handling",
+    "description": "Detailed specification for generating a Project using Generative AI",
+    "schema": "2.0",
+    "owner": "Nuvepro",
+    "created_by": "rocky",
+    "created_on": "2026-02-26T03:59:19.992695",
+    "modified_by": "rocky",
+    "modified_on": "2026-02-26T04:00:00.070076",
+    "published_on": "",
+    "category": "",
+    "version": "Lab: Spring Boot: Advanced Service Composition and Error Handling",
+    "locale": "en_US",
+    "plan_spec": {
+        "tech_domain": "Backend Development",
+        "tech_subdomain": "Spring Boot",
+        "application_domain": "Software Engineering",
+        "application_subdomain": "advanced_service_composition_error_handling",
+        "target_audience": "Intermediate to advanced Java/Spring developers seeking expertise in microservices patterns and error-handling techniques.",
+        "difficulty_level": "Advanced",
+        "time_constraints": "6-8 hours (lab exercise with step-by-step implementation, debugging, and tests)",
+        "prerequisites": [
+            "Foundational knowledge of Java",
+            "Experience with Spring Boot basics",
+            "Understanding of RESTful APIs",
+            "Basic knowledge of microservices concepts",
+            "Familiarity with Maven or Gradle",
+            "Knowledge of unit testing with JUnit"
+        ],
+        "scope": [
+            "Spring Boot service composition patterns",
+            "Service orchestration and choreography",
+            "Error propagation and mitigation in microservices",
+            "Global exception handling using @ControllerAdvice",
+            "Custom exceptions and error response mapping",
+            "Implementing circuit breaker using Resilience4j",
+            "Graceful degradation and fallback strategies",
+            "API documentation (OpenAPI/Swagger)",
+            "Testing error scenarios (unit, integration)",
+            "Logging and monitoring error events"
+        ],
+        "feature_set": [
+            "Multiple service endpoints with composite workflows",
+            "Synchronous and asynchronous service composition",
+            "Comprehensive error handling at REST controller and service layers",
+            "Centralized exception handling mechanism",
+            "Implementation of circuit breaker pattern",
+            "Fallback and retry mechanisms using Resilience4j",
+            "Detailed error response schema and API documentation",
+            "Robust unit and integration test suite for error scenarios"
+        ],
+        "problem_statement_style": "scenario",
+        "projects": [
+            {
+                "project_name": "advanced_service_composition_error_handling_springboot",
+                "tech_domain": "Backend Development",
+                "tech_subdomain": "Spring Boot",
+                "skill": "springboot",
+                "tech_stack": {
+                    "language": {
+                        "name": "Java",
+                        "version": "17"
+                    },
+                    "framework": {
+                        "name": "Spring Boot",
+                        "version": "3.x"
+                    }
+                },
+                "testing": {
+                    "unit_testing": {
+                        "framework": "JUnit 5",
+                        "mocking": "Mockito"
+                    },
+                    "integration_testing": {
+                        "framework": "Spring Boot Test",
+                        "testcontainers": false
+                    },
+                    "end_to_end_or_api_testing": {
+                        "framework": "REST Assured",
+                        "api_docs_coverage": true
+                    }
+                },
+                "scope": {
+                    "Core Concepts": [
+                        "RESTful API design in Spring Boot",
+                        "Service-to-service communication",
+                        "Error propagation in microservices"
+                    ],
+                    "Advanced Topics": [
+                        "Centralized exception handling using @ControllerAdvice",
+                        "Custom exception hierarchies",
+                        "Resilience patterns (Circuit breaker, Retry, Fallback) with Resilience4j"
+                    ],
+                    "Testing & Documentation": [
+                        "Unit/integration tests for error conditions",
+                        "API documentation generation (Swagger/OpenAPI)"
+                    ]
+                },
+                "prerequisites": [
+                    "Java programming fundamentals",
+                    "Spring Boot basic project setup",
+                    "Experience building REST APIs with Spring",
+                    "Basic Maven project management"
+                ],
+                "runtime_environment": {
+                    "Build": "Maven 3.8+",
+                    "Database": "MySQL",
+                    "Host": "localhost",
+                    "Port": "3306",
+                    "Username": "testuser",
+                    "Password": "Testuser123$",
+                    "IDE": "IntelliJ IDEA",
+                    "OS Requirements": "Windows 10+, macOS Monterey+, Ubuntu 20.04+"
+                },
+                "learning_outcomes": [
+                    "Apply advanced Spring Boot patterns for robust service composition",
+                    "Design and implement global and contextual error-handling strategies",
+                    "Integrate circuit breaker and fallback to handle downstream failures",
+                    "Develop reusable exception handling and error response classes",
+                    "Ensure highly testable, resilient service APIs"
+                ],
+                "feature_set": [
+                    "Multi-layered error handling (controller, service, global)",
+                    "Error mapping to consistent API error responses",
+                    "Demonstration of circuit breaker/fallback",
+                    "API documentation with error schemas"
+                ],
+                "api_documentation": {
+                    "OpenAPI": "Integrated via Springdoc-OpenAPI or Swagger",
+                    "Endpoints": "Documented with error response models"
+                },
+                "output_resource_type": "code",
+                "dependency_type": null
+            }
+        ],
+        "acceptance_criteria": [
+            "All composite service endpoints should work as intended, delegating calls to component services.",
+            "Errors occurring in any composed service should be properly intercepted, mapped, and returned as standardized HTTP responses.",
+            "Custom exception types and error codes should be defined and applied throughout the service layers.",
+            "Centralized exception handling must be implemented and correctly log/report all errors.",
+            "Resilience patterns (circuit breaker, fallback) must be demonstrable under simulated downstream failures.",
+            "All APIs and errors responses are fully documented using OpenAPI/Swagger.",
+            "Automated unit and integration tests must cover both normal and error scenarios."
+        ],
+        "deliverables": [
+            "Source code for composite Spring Boot services with error handling",
+            "Custom exception and global handler implementations",
+            "Resilience4j configuration and demo usage",
+            "OpenAPI (Swagger) documentation covering all endpoints and errors",
+            "Test suite (unit, integration, API) for success and error flows",
+            "Project README with setup, build, and run instructions"
+        ],
+        "need_research": "False",
+        "learning_outcomes": [
+            "Master complex service composition in Spring Boot",
+            "Design robust error-handling for microservices",
+            "Implement and configure resilience patterns",
+            "Document and test advanced service APIs"
+        ],
+        "learning_style": "guided",
+        "assessment_type": null,
+        "user_prompt": "Generate lab for module: Spring Boot: Advanced Service Composition and Error Handling",
+        "problem_statement": "Scenario-Based Problem Statement: Advanced Service Composition & Robust Error Handling in a Microservices Ordering System\n\nRole Context\nYou are an experienced Backend Engineer at a fast-growing e-commerce SaaS company. Your team is building the next-generation Order Management Service (OMS) using Spring Boot and microservices. The company increasingly faces complex operational scenarios, especially around service failures, composition bottlenecks, and inconsistent error handling in distributed workflows (such as payments, shipping, and inventory reservation). Customers and business stakeholders demand zero-downtime, clear error visibility, and resilient API workflows in the face of failures.\n\nChallenge & Problem Context\nDue to scale, the OMS must compose multiple subsystems: Payment, Inventory, Shipping, and Notification services. Service interactions are a mix of synchronous (saga/chained calls for payment and inventory) and asynchronous (shipping triggers notifications). Historically, minor service disruptions and unhandled exceptions have led to partial failures, inconsistent order states, and vague error responses. Stakeholders cited lack of transparency in error responses and frequent missing error documentation in your API.\n\nService outages, network delays, and transient errors are not uncommon. The engineering leadership now tasks your team with re-architecting the OMS service composition to ensure:\n\n- End-to-end error visibility for all orchestrated workflows.\n- Resilience to downstream and partner service failures with graceful fallback.\n- Machine-readable, well-documented error responses.\n- A robust, testable error-handling model for both controller and service layers.\n\nObjectives\nWithin a focused 6-8 hour sprint, your task is to refactor the core OMS “Create Order” composite workflow in Spring Boot to address the following:\n\n1. Master complex service composition in Spring Boot by coordinating multiple internal and external service endpoints (Payment, Inventory, Shipping, Notification). Implement both synchronous (REST chain) and asynchronous (event-based) patterns.\n2. Design robust error-handling for microservices, ensuring consistent capture, propagation, and transformation of all errors from downstream services or internal business logic. This includes mapping low-level exceptions to meaningful, actionable API error responses.\n3. Implement and configure resilience patterns: Adopt circuit breaker (with dynamic configuration), fallback logic, and retry strategies using Resilience4j for at least two downstream dependencies (e.g., Payment and Inventory).\n4. Document and test advanced service APIs: Define and document detailed, structured error response schemas for all failure scenarios in the “Create Order” workflow, using OpenAPI/Swagger. Author comprehensive unit and integration tests covering core error-handling and resilience paths (including service faults, timeouts, and fallback execution).\n\nFeature Set Requirements (Strictly Adhere)\n\n- Multiple service endpoints with composite workflows: OMS endpoint orchestrates calls to Payment, Inventory, Shipping, and Notification microservices, chaining both sync and async calls.\n- Synchronous and asynchronous service composition: E.g., synchronous REST calls for payment/inventory; event-driven async call for shipping notifications.\n- Comprehensive error handling at REST controller and service layers: All layers must catch, log, transform, and propagate error details.\n- Centralized exception handling mechanism: A single, global error controller advises across all REST controllers, returning standardized error responses.\n- Implementation of circuit breaker pattern: For Payment and Inventory, circuit breaker controls with real observable consequences and state indicators.\n- Fallback and retry mechanisms using Resilience4j: Implement at least one fallback and one retry strategy for critical path failures.\n- Detailed error response schema and API documentation: Clearly define error model structure (errorCode, message, timestamp, traceId, downstreamStatus, etc.) in Swagger/OpenAPI and in code annotations.\n- Robust unit and integration test suite for error scenarios: Tests must simulate service timeouts, downstream errors, circuit breaker state switches, and fallback engagement, asserting error responses and system resilience.\n\nLearning Outcomes Addressed\n\n- Master complex service composition in Spring Boot: Demonstrate ability to mesh synchronous and asynchronous workflows across multiple business domains and microservices.\n- Design robust error-handling for microservices: Show consistent, maintainable error propagation/transformation from all service boundaries to external API consumers.\n- Implement and configure resilience patterns: Use Resilience4j to configure circuit breaking, fallback, and retry, tuning for real-world operational patterns.\n- Document and test advanced service APIs: Deliver machine-readable API error docs, plus high-coverage test suites validating your error-handling and resilience under fault conditions.\n\nAssumptions about Target Audience\n\n- You are an intermediate to advanced Java/Spring developer, experienced with REST APIs and microservice basics.\n- You understand basic exception handling, Spring Boot controllers/services, and have previously written unit/integration tests.\n- You aim to deepen understanding of advanced error-handling, circuit breaker/fallback patterns, and microservice orchestration.\n\nProject Execution & Timeline (6–8 Hour Sprint, Example Breakdown)\n\n1. [1 hour] Design composite “Create Order” workflow, identifying all downstream service calls, sync/async boundaries, and error hotspots.\n2. [1.5 hours] Implement synchronous (Payment/Inventory) and asynchronous (Shipping/Notification) service compositions using RESTTemplate/WebClient and event mechanisms (e.g., Spring Events or simple async calls).\n3. [1 hour] Apply comprehensive error handling: Custom exceptions per failure mode, service- and controller-level try/catch, with error propagation.\n4. [30 min] Add centralized exception handler (@ControllerAdvice) with standardized error model. Ensure all endpoints return uniform error schemas.\n5. [1 hour] Integrate Resilience4j: Circuit breaker for Payment and Inventory; define fallback strategies and implement at least one meaningful retry.\n6. [30 min] Document all REST endpoints, request/response schemas, and error codes in Swagger/OpenAPI. Annotate all error contracts.\n7. [1.5 hours] Write robust unit and integration test suites: Simulate service outages, timeouts, network errors; assert on error responses, circuit/fallback operation, and correct API documentation exposure.\n8. [30 min] Code review, refine error documentation, and package submission (API docs, code, test results).\n\nDeliverables\n\n- Spring Boot project with fully orchestrated and resilient “Create Order” composite endpoint\n- Java codebase with:\n  - REST and service classes for each system\n  - Centralized exception handler and custom error models\n  - Resilience4j circuit breaker/fallback/retry integration\n  - Synchronous and asynchronous workflow logic\n- OpenAPI/Swagger specifications with detailed error response schemas and codes\n- Unit and integration test suites with scenarios for all error, fallback, and resilience paths\n\nSuccess Criteria\n\n- “Create Order” endpoint demonstrates correct service orchestration, surviving representative downstream failures and returning clear, actionable error responses according to documented schema.\n- Circuit breaker/fallback functionality can be triggered and observed in test cases.\n- API documentation is complete with error scenarios and models.\n- Test suite achieves high coverage on both successful and error scenarios, with all tests passing.\n\nConstraining Guidelines\n\n- Stay within the listed feature set and learning outcomes—no additional technologies, architectural patterns, or front-end concerns.\n- Limit the solution strictly to Backend Development in Spring Boot and core Java (plus Resilience4j, Swagger/OpenAPI as required).\n- Assume test collaborators simulate downstream microservices (no real external systems integration).\n\nThis project challenges you to orchestrate real-world microservices with resilient error-handling and clear, testable, and well-documented APIs—preparing you for advanced responsibilities in modern Backend Engineering teams leveraging Spring Boot."
+    }
+}
